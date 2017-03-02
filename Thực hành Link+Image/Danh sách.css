@@ -1,0 +1,31 @@
+a:link {
+	color: black;
+}
+a:visited {
+	color: grey;
+}
+a:hover {
+	color: blue;
+}
+a:active{
+	color: red;
+}
+
+img{
+	max-width: 300px;
+	max-height: 300px;
+}
+#img1{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60%;
+	max-height: 60%;
+}
+#p1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: blue;
+}
