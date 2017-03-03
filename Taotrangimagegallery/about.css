@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+
+img {
+    display: block;
+	margin: auto;
+	}
+#wrap{
+	max-width: 1024px;
+	margin: auto;
+}
+#menu p{
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 30px;
+}
+
+#menu a{
+	margin: 30px;
+	padding-bottom: 20px;
+}
+#img{
+	width: 1024px;
+	height: 360px;
+}
+#img img{
+	width: 100%;
+	height: 100%;
+}
+#img img:hover {
+	-webkit-transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -o-transform:scale(1.3); 
+}
+.thumb{
+	float: left;
+	width: 46%;
+	height: 320px;
+	margin: 20px;
+}
