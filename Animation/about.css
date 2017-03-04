@@ -22,7 +22,10 @@ body{
     100% {background-color: #3f51b5; color: #F9E559;}
 }
 
-
+@keyframes footer {
+	from {right: 0px;}
+    to {opacity: 0; right: 440px;}
+}
 
 h1{
 	text-transform: uppercase;
@@ -32,19 +35,25 @@ h1{
 	animation: title 5s ease infinite;
 }
 
+p{
+	opacity: 1;
+	position: relative;
+	animation: footer 3s infinite;
+}
 .wrap{
 	width: 1000px;
 	margin: auto;
 }
 
 .wrap img{
-	float: left;
 	width: 30%;
 	height: 300px;
+	overflow: hidden;
 }
 
 .col img{
 	margin: 15px;
+	float: left;
 }
 
 .thumb1 img{
@@ -55,19 +64,17 @@ h1{
 	opacity: 0.5;
 }
 
-.thumb2 img{
-	overflow: hidden;
-}
-
 .thumb2:hover img{
 	transform: scale(1.2);
 }
 
-.thumb3 img{
-	position: relative;
+.thumb3:hover img{
+	transform: translate(0, -7px);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2)
 }
 .footer{
-	position: absolute;
+	text-align: right;
 	font-family: "lucida console";
 	font-weight: bold;
+	transition: opacity 3s ease-out;
 }
