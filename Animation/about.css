@@ -64,6 +64,9 @@ p{
 	opacity: 0.5;
 }
 
+.thumb2 img{
+	overflow: hidden;
+}
 .thumb2:hover img{
 	transform: scale(1.2);
 }
