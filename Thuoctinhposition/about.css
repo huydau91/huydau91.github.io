@@ -13,7 +13,7 @@ img {
 }
 
 #banner img{
-	max-width: 70%;
+	max-width: 100%;
 }
 #menu{
 	position: relative;
@@ -50,8 +50,8 @@ img {
 
 #danhsachhero{
 	position: absolute;
-	left: -11px;
-    top: 18px;
+	left: 36px;
+    top: 0;
 }
 
 #danhsachhero p{
