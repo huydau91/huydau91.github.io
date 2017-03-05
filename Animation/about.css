@@ -23,7 +23,7 @@ body{
 }
 
 @keyframes footer {
-	from {right: 280px;}
+	from {right: 185px;}
     to {opacity: 0; right: 650px;}
 }
 
