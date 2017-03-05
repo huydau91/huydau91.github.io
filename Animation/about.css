@@ -72,7 +72,12 @@ p{
 	float: left;
 	overflow: hidden;
 }
+.thumb2 img{
+	opacity: 0.5;
+	transition: opacity 0.5s ease-in-out;
+}
 .thumb2:hover img{
+	opacity: 1;
 	transform: scale(1.2);
 }
 
