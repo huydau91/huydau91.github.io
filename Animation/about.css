@@ -23,8 +23,10 @@ body{
 }
 
 @keyframes footer {
-	from {right: 185px;}
-    to {opacity: 0; right: 650px;}
+	0% {opacity: 0; right: 150px;}
+	40% {opacity: 1; right: 185px;}
+	50% {opacity: 1; right: 185px;}
+    100%{opacity: 0; right: 650px;}
 }
 
 h1{
