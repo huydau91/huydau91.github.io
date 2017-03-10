@@ -9,36 +9,44 @@
 	<script>
 		function bai1(x,y){
 			if (typeof x === "number" && typeof y === "number"){
-				document.write("<p>Hai tham số vừa nhập là hai số!</p>")
-				if (y>x || x=y){
-					document.write("<p>Số lớn nhất là: " + y + "</p>")
+				document.write("<p>Hai tham số vừa nhập là hai số!</p>");
+				if (x > y){
+					document.write("<p>Số lớn nhất là: " + x + "</p>");
 				}
-				else
-					document.write("<p>Số lớn nhất là: " + x + "</p>")
+				else if(x == y){
+					document.write("<p>Hai số bằng nhau!</p>");
+				}
+				else{
+					document.write("<p>Số lớn nhất là: " + y + "</p>");
+				}
 			}
 			else
-				document.write("<p>Hai tham số vừa nhập không cùng loại!</p>")
+				document.write("<p>Hai tham số vừa nhập không cùng loại!</p>");
 			return;
 		}
 
 		function bai2(x){
 			if (typeof x === "number"){
-				document.write("<p>Tham số vừa nhập là một số!</p>")
-				if (x>0){
-					for (var a = i = 1; i <= x; i++){
-						 a *=i;
+				if(parseInt(x) == x){
+					if(x > 0){
+						for (var a = i = 1; i <= x; i++){
+							 a *=i;
+						}
+						document.write("<p>Giai thừa số vừa nhập là: " + a + "</p>");
+						return a;
 					}
-					document.write("<p>Giai thừa số vừa nhập là: " + a + "</p>")
-					return a;
+					else
+						document.write("<p>Tham số vừa nhập không phải là một số nguyên dương!</p>");
+					return x;
+					}
+					else
+						document.write("<p>Tham số vừa nhập không phải là một số nguyên!</p>");
 				}
 				else
-					document.write("<p>Tham số vừa nhập không phải là một số nguyên dương!</p>")
+					document.write("<p>Tham số vừa nhập không phải là một số!</p>");
 				return x;
-			}
-			else
-				document.write("<p>Tham số vừa nhập không phải là một số!</p>")
-			return x;
 		}
+
 
 		function bai3(x){
 			var arr = [];
