@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dieu Kien Re Nhanh</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3 align="center">Điều kiện rẽ nhánh phần 2</h3>
+	<script>
+		function bai1(){
+			var now = new Date();
+			var date = now.getDate();
+			var month = now.getMonth() + 1;
+			var year = now.getFullYear();
+			var day = now.getDay();
+			var days = new Array ("chủ nhật","thứ hai","thứ 3","thứ 4","thứ 5","thứ 6","thứ 7");
+
+			document.write("<p>Hôm nay là: " + days[day] + " " + "ngày " + date + " " + "tháng " + month + " " + "năm " + " " + year + "</p>");
+			switch(month){
+			case 11:
+			case 12:
+			case 1:
+				season = document.write("Mùa đông");
+				break;
+			case 2:
+			case 3:
+			case 4:
+				season = document.write("Mùa xuân");
+				break;
+			case 5:
+			case 6:
+			case 7:
+				season = document.write("Mùa hè");
+				break;
+			case 8:
+			case 9:
+			case 10:
+				season = document.write("Mùa thu");
+				break;
+			}
+		}
+
+		function bai2(x){
+			var a = x.toString();
+			if(a.length <= 10){
+				document.write(a);
+			}
+			else
+				document.write(a.slice(0,10) + "...");
+			return;
+		}
+
+		function bai3(x){
+			var a = Number(x);
+			if(a >= 0 && a <= 10){
+				if (a >= 0 && a <= 3.9) {
+					document.write("<p>Điểm F!</p>");
+				}
+				else if (a >= 4 && a <= 5.4) {
+					document.write("<p>Điểm D!</p>");
+				}
+				else if (a >= 5.5 && a <= 6.9) {
+					document.write("<p>Điểm C!</p>");
+				}
+				else if (a >= 7 && a <= 8.4) {
+					document.write("<p>Điểm B!</p>");
+				}
+				else if (a >= 8.5 && a <= 10) {
+					document.write("<p>Điểm A!</p>");
+				}
+				return a;
+			}
+			else
+				document.write("<p>Điểm vừa nhập không hợp lệ!</p>");
+			return a;
+		}
+
+		function bai4(x){
+			switch(x){
+				case "nhat":
+				document.write("<p>こんにちは!</p>");
+				break;
+				case "phap":
+				document.write("<p>Bonjour!</p>");
+				break;
+				case "duc":
+				document.write("<p>Hallo!</p>");
+				break;
+				case "trungquoc":
+				document.write("<p>你好!</p>");
+				break;
+				case "nga":
+				document.write("<p>Здравствуйте!</p>");
+				break;
+				default:
+				document.write("<p>Xin chào!");
+			}
+		}
+
+		function bai5(x){
+			for(var i = 0; i < x.length; i++){
+				if(x[i] == true){
+					document.write("Giá trị True xuất hiện lần đầu ở vị trí: x[" + i + "]");
+					break;
+				}
+			}
+		}
+
+		function bai6(){
+			for(var i = 1; i <= 100; i++){
+				while(i%2 != 0){
+					document.write("<span style='color:red'>" + i + " ");
+					break;
+				}
+				while(i%2 == 0){
+					document.write("<span style='color:blue'>" + i + " ");
+					break;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

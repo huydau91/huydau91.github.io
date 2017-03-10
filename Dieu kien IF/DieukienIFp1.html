@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dieu Kien Re Nhanh 1</title>
+	<meta charset="utf-8">
+</head>
+<h3 align="center">Điều kiện rẽ nhánh phần 1</h3>
+<body>
+	<script>
+		function bai1(x,y){
+			if (typeof x === "number" && typeof y === "number"){
+				document.write("<p>Hai tham số vừa nhập là hai số!</p>")
+				if (x>y){
+					document.write("<p>Số lớn nhất là: " + x + "</p>")
+				}
+				else
+					document.write("<p>Số lớn nhất là: " + y + "</p>")
+			}
+			else
+				document.write("<p>Hai tham số vừa nhập không cùng loại!</p>")
+			return;
+		}
+
+		function bai2(x){
+			if (typeof x === "number"){
+				document.write("<p>Tham số vừa nhập là một số!</p>")
+				if (x>0){
+					for (var a = i = 1; i <= x; i++){
+						 a *=i;
+					}
+					document.write("<p>Giai thừa số vừa nhập là: " + a + "</p>")
+					return a;
+				}
+				else
+					document.write("<p>Tham số vừa nhập không phải là một số nguyên dương!</p>")
+				return x;
+			}
+			else
+				document.write("<p>Tham số vừa nhập không phải là một số!</p>")
+			return x;
+		}
+
+		function bai3(x){
+			var arr = [];
+			for (var i = 0; i < x.length; i++){
+			if (x[i]%2 === 0){
+				arr.push(x[i]);
+				}
+			}
+			arr.sort(function(a,b){
+				return a-b
+			});
+			document.write("<p>[" + arr + "]</p>");
+			return arr;
+		}
+
+		function bai4 (user = {
+		  username: "",
+		  password: "",
+		  confirm: ""})
+		{
+			if(user.username == null || user.username.length > 20){
+				document.write("<p>Tên đăng nhập không hợp lệ!</p>");
+			}
+
+			else if(user.password == null || user.password.length < 6 || user.password.length > 32){
+				document.write("<p>Mật khẩu không hợp lệ!</p>");
+			}
+
+			else if(user.confirm !== user.password || user.confirm.length !== user.password.length){
+				document.write("<p>Xác nhận mật khẩu không đúng!</p>");
+			}
+
+			else
+			document.write("<p>Đăng nhập thành công!</p>");
+			return user;
+		 }
+
+	</script>
+
+</body>
+</html>
