@@ -43,10 +43,10 @@
 		function bai2(x){
 			var a = x.toString();
 			if(a.length <= 10){
-				document.write(a);
+				document.write("<p>" + a + "<p>");
 			}
 			else
-				document.write(a.slice(0,10) + "...");
+				document.write("<p>" + a.slice(0,10) + "..." + "</p>");
 			return;
 		}
 
@@ -100,7 +100,7 @@
 		function bai5(x){
 			for(var i = 0; i < x.length; i++){
 				if(x[i] == true){
-					document.write("Giá trị True xuất hiện lần đầu ở vị trí: x[" + i + "]");
+					document.write("<p>Giá trị True xuất hiện lần đầu ở vị trí: x[" + i + "]</p>");
 					break;
 				}
 			}
