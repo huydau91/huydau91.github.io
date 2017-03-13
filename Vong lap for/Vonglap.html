@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vong lap</title>
+	<meta charset="utf-8">
+</head>
+<h2 align="center">Vòng lặp</h2>
+<body>
+	<script>
+		function bai1(x){
+			for (var a = i = 1; i <= x; i++){
+				a *=i;
+			}
+			document.write(a);
+			return a;
+		}
+
+		function bai2(x) {
+		    var a = '';
+		    for (var i = x.length - 1; i >= 0; i--)
+		        a += x[i];
+		    document.write(a);
+		    return a;
+		}
+
+		function bai3(x) {
+			var a = '';
+				    for (var i = 0; i < 10; i++){
+				        a += x + "-";
+		        }
+		        a = a.substring(0, a.length-1);
+		        document.write(a);
+		      	return a;
+		}
+
+		function bai4(x){
+			x.sort(function(a,b){
+			var x = a.toLowerCase();
+		    var y = b.toLowerCase();
+		    if (x < y) {return -1;}
+		    if (x > y) {return 1;}
+			});
+			for (var i = 0; i < x.length; i++){
+				document.write("<p>Học viên thứ " + i + " " +"là: " + x[i] + "</p>");
+			}
+			return x;
+		}
+
+		function bai5(x){
+			for (var i = 0; i < x.length; i++){
+				x[i] = x[i]*x[i];
+			}
+			document.write("[" + x + "]");
+			return x;
+		}
+
+		function bai6(x){
+			for (var i = 0; i < x.length; i++){
+				x[i] = x[i]%2;
+			}
+			document.write("[" + x + "]");
+			return x;
+		}
+
+	</script>
+</body>
+</html>
