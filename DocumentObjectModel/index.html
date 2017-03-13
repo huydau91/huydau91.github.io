@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Model</title>
+	<meta charset="utf-8">
+</head>
+<body style="margin: auto; background: rgba(128, 128, 128, 0.28);">
+	
+	<h3 style="color: black; font-size: 20px; font-weight: bold; text-transform: uppercase; text-align: center;padding-top: 20px;">document object model!</h3>
+
+	<div id="wrap" style="text-align: justify; width: 1050px; margin: auto; background: white; padding: 40px;">
+	<p id="p1" class="text">Thác nước Ángel, tiếng địa phương: Kerepakupai Meru, tiếng Tây Ban Nha: Salto Ángel; tiếng Pemon: thác nước Angel có nghĩa "thác nước của nơi sâu nhất", hoặc Parakupá Vená, có nghĩa "thác nước từ đỉnh cao nhất") là một thác nước tại Venezuela. Đây là thác nước không ngắt quãng cao nhất thế giới, có chiều cao 979 m (3.212 ft) và dòng nước đổ xuống 807 m (2.648 ft). Thác nước đổ xuống từ trên rìa núi Auyantepui ở công viên quốc gia Canaima (tiếng Tây Ban Nha: Parque Nacional Canaima), một di sản thế giới UNESCO tại vùng Gran Sabana thuộc bang Bolívar. Con số chiều cao 979 m (3.212 ft) chủ yếu bao gồm dòng nước đổ xuống chính yếu nhưng cũng gồm khoảng 400 m (0,25 mi) thác dốc ghềnh và ghềnh nước bên dưới đổ nước xuống, cộng thêm 30 mét (98 ft) độ cao hạ lưu đổ nước của các ghềnh nghiêng.
+	Thác nước dọc theo một ngã ba của thác Rio Kerepakupai chảy vào sông Churun, một nhánh của sông Carrao, bản thân thác nước là một nhánh của sông Orinoco.</p>
+
+	<p id="p2" class="text">Thác nước được biết đến với tên "thác nước Angel" từ khi giữa thế kỷ XX; được đặt tên dựa theo Jimmie Angel, một phi công người Mỹ, từng là người đầu tiên bay vượt qua thác. Tro cốt của Angel được rải trên thác nước vào ngày 02 tháng 7 năm 1960.
+	Tên gọi phổ biến Salto Ángel theo tiếng Tây Ban Nha bắt nguồn từ họ của ông. Vào năm 2009, tổng thống Hugo Chávez công bố ý định thay đổi tên thành thật ngữ Pemón gốc bản địa có tiếng ("Kerepakupai Vená", có nghĩa "thác nước của nơi sâu nhất"), với lý do là địa danh nổi tiếng nhất quốc gia nên đáng có một tên gọi bản địa. Lý giải về việc thay đổi tên, Chávez thông cáo rằng, "Thác nước này của chúng ta, rất lâu trước khi Angel đặt chân đến... đây là tài sản bản địa." Tuy nhiên, sau đó ông nói rằng ông sẽ không ra nghị định đổi tên, không những bảo vệ dùng tên Kerepakupai Vená.</p>
+
+	<p id="p3" class="text">Thác nước Angel là một trong những điểm du lịch hàng đầu của Venezuela, mặc dù một chuyến đi đến thác là một hành trình phức tạp. Thác nước nằm trong một khu rừng hẻo lánh. Một chuyến bay từ Puerto Ordaz hoặc Ciudad Bolívar cần thiết để tiến đến điểm cắm trại Canaima, điểm khởi đầu cho chuyến đi xuôi dòng sông đến chân thác. Chuyến đi xuôi dòng sông thường diễn ra từ tháng sáu đến tháng mười hai, khi sông ngòi đủ sâu để hướng dẫn viên Pemón sử dụng. Trong mùa khô (tháng mười hai đến tháng ba) có ít nước hơn các tháng khác.</p>
+	</div>
+	<script>
+		function changeFontSize(x){
+			if(typeof x == "number"){
+				p1.style.fontSize = x +"px";
+				p2.style.fontSize = x +"px";
+				p3.style.fontSize = x +"px";
+			}
+		}
+
+		function increaseFontSize(x){
+			switch(x){
+				case p1:
+				var a = parseInt(p1.style.fontSize.replace("px",""));
+				if(a < 31){	
+					a += 1;
+					p1.style.fontSize = a + "px";
+					break;
+				}
+				case p2:
+				var a = parseInt(p2.style.fontSize.replace("px",""));
+				if(a < 31){	
+					a += 1;
+					p2.style.fontSize = a + "px";
+					break;
+				}
+				case p3:
+				var a = parseInt(p3.style.fontSize.replace("px",""));
+				if(a < 31){	
+					a += 1;
+					p3.style.fontSize = a + "px";
+					break;
+				}
+			}
+		}
+
+		function decreaseFontSize(x){
+			switch(x){
+				case p1:
+				var a = parseInt(p1.style.fontSize.replace("px",""));
+				if(a > 9){	
+					a -= 1;
+					p1.style.fontSize = a + "px";
+					break;
+				}
+				case p2:
+				var a = parseInt(p2.style.fontSize.replace("px",""));
+				if(a > 9){	
+					a -= 1;
+					p2.style.fontSize = a + "px";
+					break;
+				}
+				case p3:
+				var a = parseInt(p3.style.fontSize.replace("px",""));
+				if(a > 9){	
+					a -= 1;
+					p3.style.fontSize = a + "px";
+					break;
+				}
+			}
+		}
+
+		function changeColor(){
+			p1.style.color = "green";
+			p2.style.color = "yellow";
+			p3.style.color = "red"
+		}
+
+		function changebgColor(x){
+			wrap.style.background = x;
+		}
+
+		function copyContent(a,b){
+			a.innerHTML = b.innerHTML;
+		}
+		
+	</script>
+</body>
+</html>
