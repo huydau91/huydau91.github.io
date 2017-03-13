@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai tap ve hinh</title>
+	<meta charset="utf-8">
+</head>
+<h3 align="center" style="cursor: alias; text-transform: uppercase; font-size: 30px; color: blue">bài tập vẽ hình</h3>
+<body>
+	<script>
+		function printSquare(n) {
+		  var str = '';
+		  for (var i = 0; i < n; i ++) {
+		    for (var j = 0; j < n; j++) {
+		      // In ra n dấu *
+		      str += ' * ';
+		    }
+		    // In ra dấu xuống dòng
+		    str += '<br/>';
+		  }
+		  return str;
+		}
+
+		function bai1(n){
+			if(n > 2 && parseInt(n) == n){
+				var str = '';
+				  for(var i = 0; i < n; i ++) {
+				  	for(var j = 0; j < i+1; j++){
+				    str += ' * ';
+					}
+					str += '<br/>';
+				  }
+				  return str;
+				}
+			else
+				document.write("<p>n phải lớn hơn 2!");
+		}
+
+		function bai2(y,x){
+			if(x > 3 && y > 3 && parseInt(x) == x && parseInt(y) == y){
+				var str = '';
+				for(var i = 0; i < x; i++){
+					if(i == 0 || i == x-1){
+						for(var j = 0; j < y; j++){
+							str += ' * ';
+						}
+						str += '<br/>';
+					}
+					else{
+						for(var j = 0; j < y; j++){
+							if (j == 0 || j == y-1){
+								str += ' * ';
+							}
+							else 
+								str += ' &nbsp;&nbsp; ';
+						}
+						str += '<br/>';
+					}
+				}
+				return str;
+			}
+			else
+				document.write("<p>n phải lớn hơn 3!");
+		}
+
+		function bai3(n){
+			var str = '';
+			if(n > 1 && parseInt(n) == n){
+				for(var i = 0; i < n; i++){
+					for(var j = 0; j < n*2-1; j++){
+						if(i !=0){
+							for(j = 0; j < i; j++){
+								str += ' &nbsp;&nbsp; ';
+							}
+							for(j = i; j < n*2-1-i; j++){
+								str += ' * ';
+							}
+							break;
+						}
+						else
+							str += ' * ';
+					}
+				str += '<br/>';
+				}
+			}
+			return str;
+		}
+
+		function bai4(n){
+			if( n>3 && parseInt(n) == n && n%2 != 0){
+				var str = '';
+				for(var i = 0; i < n; i++){
+					for(var j = 0; j < n; j++){
+						if(j == i || j == n-1-i){
+							str += ' * ';
+						}
+						else
+							str += ' &nbsp;&nbsp; ';
+					}
+					str += '<br/>';
+				}
+				return str;
+			}
+		}
+
+		function bai5(n){
+			if(n>3 && parseInt(n) == n && n%2 != 0){
+				var str = '';
+				for(var i = 0; i < n; i++){
+					for(var j = 0; j < n; j++){
+						if(j > i && j < n-1-i || j < i && j > n-1-i)
+							str += ' &nbsp;&nbsp; ';
+						else
+							str += ' * ';
+					}
+					str += '<br/>'
+				}
+				return str;
+			}
+		}
+		
+	</script>
+</body>
+</html>
