@@ -1,0 +1,40 @@
+h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: darkcyan;
+}
+
+.wrap {
+	margin: auto;
+	width: 100%;
+}
+
+.std {
+	margin: auto;
+	border: 1px solid rgba(63, 81, 181, 0.94);
+	width: 400px;
+}
+
+.text{
+	text-align: right;
+	width: 376px;
+	height: 90px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-color: white;
+	border-radius: 5%;
+	font-size: 50px;
+}
+
+.button{
+	width: 93px;
+    height: 60px;
+    margin: 2px;
+    background: white;
+    border: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}

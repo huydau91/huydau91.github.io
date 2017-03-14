@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Event</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<h3>ứng dụng calculator</h3>
+<body>
+<div class="wrap">
+	<div class="std">
+		<input id="KQ" class="text">
+		
+		<input class="button" type="submit" value="%" onclick="runptram()">
+		<input class="button" type="submit" value="√" onclick="runcan()">
+		<input class="button" type="submit" value="x&sup2;" onclick="runbphuong()">
+		<input class="button" type="submit" value="1/x" onclick="runchiax()"><br>
+		
+		<input class="button" type="submit" value="CE" onclick="ce()">
+		<input class="button" type="submit" value="C" onclick="ce()">
+		<input class="button" type="submit" value="«" onclick="back()">
+		<input class="button" type="submit" value="/" onclick="runchia()"><br>
+		<input class="button" type="submit" value="7" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="8" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="9" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="*" onclick="runnhan()"><br>
+
+		<input class="button" type="submit" value="4" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="5" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="6" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="-" onclick="runtru()"><br>
+
+		<input class="button" type="submit" value="1" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="2" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="3" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="+" onclick="runcong()"><br>
+
+		<input class="button" type="submit" value="±" onclick="runplusmn()">
+		<input class="button" type="submit" value="0" onclick="Set_num(this.value)">
+		<input class="button" type="submit" value="." onclick="runcham()">
+		<input class="button" type="submit" value="=" onclick="ketqua()">
+	</div>
+	<script>
+		function a(id){
+			return document.getElementById(id);
+		}
+
+		var x = '';
+		function Set_num(num){
+			x += num;
+			a('KQ').value = x;
+		}
+
+		function ketqua(){
+			a('KQ').value = eval(a('KQ').value);
+			x = '';
+		}
+
+		function ce(){
+			a('KQ').value = '';
+			x = '';
+		}
+
+		function back(){
+			a('KQ').value = a('KQ').value.slice(0,a('KQ').value.length-1);
+			x = a('KQ').value;
+		}
+
+		function runcan(){
+			a('KQ').value = Math.sqrt(a('KQ').value);
+			x = a('KQ').value;
+		}
+
+		function runbphuong(){
+			a('KQ').value = a('KQ').value*a('KQ').value;
+			x = a('KQ').value;
+		}
+
+		function runchiax(){
+			a('KQ').value = 1/a('KQ').value;
+			x = a('KQ').value;
+		}
+
+		function runptram(){
+			a('KQ').value = a('KQ').value/100;
+			x = a('KQ').value;
+		}
+
+		function runplusmn(){
+			a('KQ').value = a('KQ').value*-1;
+			x = a('KQ').value;
+		}
+
+		function runcong(){
+			if(a('KQ').value[a('KQ').value.length-1] == "+"){
+				x = a('KQ').value;;
+			}
+			else{
+			a('KQ').value += "+";
+			x = a('KQ').value;
+			}
+		}
+		function runtru(){
+			if(a('KQ').value[a('KQ').value.length-1] == "-"){
+				x = a('KQ').value;;
+			}
+			else{
+			a('KQ').value += "-";
+			x = a('KQ').value;
+			}
+		}
+		function runnhan(){
+			if(a('KQ').value[a('KQ').value.length-1] == "*"){
+				x = a('KQ').value;;
+			}
+			else{
+			a('KQ').value += "*";
+			x = a('KQ').value;
+			}
+		}
+		function runchia(){
+			if(a('KQ').value[a('KQ').value.length-1] == "/"){
+				x = a('KQ').value;;
+			}
+			else{
+			a('KQ').value += "/";
+			x = a('KQ').value;
+			}
+		}
+		function runcham(){
+			if(a('KQ').value[a('KQ').value.length-1] == "."){
+				x = a('KQ').value;;
+			}
+			else{
+			a('KQ').value += ".";
+			x = a('KQ').value;
+			}
+		}
+
+	</script>
+</div>
+</body>
+</html>
