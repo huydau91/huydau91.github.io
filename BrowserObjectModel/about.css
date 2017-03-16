@@ -91,3 +91,16 @@ h3{
 	background: rgba(3, 108, 140, 0.67);
 	color: #f6f6f6;
 }
+
+@keyframes chucmung {
+    0%  {color: blueviolet;}
+    20%  {color: blue;}
+    40%  {color: brown;}
+    60%  {color: burlywood;}
+    80%  {color: darkcyan;}
+    100% {color: cadetblue;}
+}
+
+p{
+    animation: chucmung 5s ease infinite;
+}
