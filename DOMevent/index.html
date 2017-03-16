@@ -69,7 +69,6 @@
 		function back(){
 			a('KQ').value = a('KQ').value.slice(0,a('KQ').value.length-1);
 			x = a('KQ').value;
-			return i;
 		}
 
 		function runcan(){
@@ -153,49 +152,23 @@
 			x = a('KQ').value;
 			}
 		}
-		var i = 1;
+		var i = 0;
 		function runcham(){
 			if(a('KQ').value == '' || a('KQ').value.length > 1 && Number(a('KQ').value[a('KQ').value.length-1]) != Number(a('KQ').value[a('KQ').value.length-1]) && a('KQ').value[a('KQ').value.length-1] != '.'){
 				a('KQ').value += "0.";
 				x = a('KQ').value;
 				return;
 			}
+
 			if(a('KQ').value[a('KQ').value.length-1] == '.'){
 				x = a('KQ').value;
 				return;
 			}
-			// if(a('KQ').value.length > i){
-			// 	for(i; i < a('KQ').value.length; i++){
-			// 		for(i ; i < a('KQ').value.length; i++){
-			// 		if (a('KQ').value[i] == "+" || a('KQ').value[i] == "-" || a('KQ').value[i] == "*" || a('KQ').value[i] == "/"){
-			// 			a('KQ').value += ".";
-			// 			x = a('KQ').value;
-			// 			return i;
-			// 		}
-			// 		else if(a('KQ').value[a('KQ').value.length-1] == "."){
-			// 			x = a('KQ').value;
-			// 			return;
-			// 			}
-			// 		else{
-			// 			for(i; i < a('KQ').value.length; i++){
-			// 				if(a('KQ').value[i] == '.'){
-			// 					x = a('KQ').value;
-			// 					}
-			// 				}
-			// 			for(i; i < a('KQ').value.length; i++){
-			// 			if(a('KQ').value[i] != '.'){
-			// 				a('KQ').value += ".";
-			// 				x = a('KQ').value;
-			// 				}
-			// 				}
-			// 			}
-			// 		}
-			// 	}
-			// }
+
 			else{
 				a('KQ').value += ".";
 				x = a('KQ').value;
-				}
+			}
 		}
 
 	</script>
