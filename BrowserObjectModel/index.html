@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Browser Object Model</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<h3>browser object model</h3>
+<body style="background-image: url('2.jpg');">
+<div class="wrap">
+<div class="quiz">
+	<div id="container" class="container">
+		<div id="cauhoi" class="cauhoi"></div>
+		<label class="luachon"><input type="radio" name="luachon" value="1" /><span id="luachon1"></span></label>
+		<label class="luachon"><input type="radio" name="luachon" value="2" /><span id="luachon2"></span></label>
+		<label class="luachon"><input type="radio" name="luachon" value="3" /><span id="luachon3"></span></label>
+		<label class="luachon"><input type="radio" name="luachon" value="4" /><span id="luachon4"></span></label>
+		<button id="cautieptheo" class="cautieptheo" onclick="next();">câu tiếp theo</button>
+	</div>
+
+	<div id="ketqua" class="ketqua"></div>
+	<button id="choilai" class="choilai" style="display: none;" onclick="window.location.reload()">Chơi lại</button>
+</div>
+</div>
+<script src="dscauhoi.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
