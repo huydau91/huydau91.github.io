@@ -19,21 +19,21 @@
 		<input class="button" type="submit" value="CE" onclick="ce()">
 		<input class="button" type="submit" value="C" onclick="ce()">
 		<input class="button" type="submit" value="«" onclick="back()">
-		<input id="operator" class="button" type="submit" value="/" onclick="runchia()"><br>
+		<label><button class="button" value="/" onclick="runchia()">&divide;</button><br>
 		<input class="button" type="submit" value="7" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="8" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="9" onclick="Set_num(this.value)">
-		<input id="operator" class="button" type="submit" value="*" onclick="runnhan()"><br>
+		<input class="button" type="submit" value="*" onclick="runnhan()"><br>
 
 		<input class="button" type="submit" value="4" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="5" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="6" onclick="Set_num(this.value)">
-		<input id="operator" class="button" type="submit" value="-" onclick="runtru()"><br>
+		<input class="button" type="submit" value="-" onclick="runtru()"><br>
 
 		<input class="button" type="submit" value="1" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="2" onclick="Set_num(this.value)">
 		<input class="button" type="submit" value="3" onclick="Set_num(this.value)">
-		<input id="operator" class="button" type="submit" value="+" onclick="runcong()"><br>
+		<input class="button" type="submit" value="+" onclick="runcong()"><br>
 
 		<input class="button" type="submit" value="±" onclick="runplusmn()">
 		<input class="button" type="submit" value="0" onclick="Set_num(this.value)">
@@ -92,16 +92,16 @@
 		}
 
 		function runplusmn(){
-			a('KQ').value = a('KQ').value*-1;
+			a('KQ').value = a('KQ').value*(-1);
 			x = a('KQ').value;
 		}
 
 		function runcong(){
-			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "*" || a('KQ').value[a('KQ').value.length-1] == "/"){
+			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "x" || a('KQ').value[a('KQ').value.length-1] == "&divide;"){
 				x = a('KQ').value;
 				return;
 			}
-			if(a('KQ').value == '' || a('KQ').value == '/' || a('KQ').value == '-' || a('KQ').value == '*'){
+			if(a('KQ').value == '' || a('KQ').value == '&divide;' || a('KQ').value == '-' || a('KQ').value == 'x'){
 				a('KQ').value = '';
 				x = a('KQ').value;
 			}
@@ -111,11 +111,11 @@
 			}
 		}
 		function runtru(){
-			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "*" || a('KQ').value[a('KQ').value.length-1] == "/"){
+			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "x" || a('KQ').value[a('KQ').value.length-1] == "&divide;"){
 				x = a('KQ').value;
 				return;
 			}
-			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '/' || a('KQ').value == '*'){
+			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '&divide;' || a('KQ').value == 'x'){
 				a('KQ').value = '';
 				x = a('KQ').value;
 			}
@@ -125,11 +125,11 @@
 			}
 		}
 		function runnhan(){
-			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "*" || a('KQ').value[a('KQ').value.length-1] == "/"){
+			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "x" || a('KQ').value[a('KQ').value.length-1] == "&divide;"){
 				x = a('KQ').value;
 				return;
 			}
-			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '-' || a('KQ').value == '/'){
+			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '-' || a('KQ').value == '&divide;'){
 				a('KQ').value = '';
 				x = a('KQ').value;
 			}
@@ -139,16 +139,16 @@
 			}
 		}
 		function runchia(){
-			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "*" || a('KQ').value[a('KQ').value.length-1] == "/"){
+			if(a('KQ').value[a('KQ').value.length-1] == "+" || a('KQ').value[a('KQ').value.length-1] == "-" || a('KQ').value[a('KQ').value.length-1] == "x" || a('KQ').value[a('KQ').value.length-1] == "&divide;"){
 				x = a('KQ').value;
 				return;
 			}
-			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '-' || a('KQ').value == '*'){
+			if(a('KQ').value == '' || a('KQ').value == '+' || a('KQ').value == '-' || a('KQ').value == 'x'){
 				a('KQ').value = '';
 				x = a('KQ').value;
 			}
 			else{
-			a('KQ').value += "/";
+			a('KQ').value += "&divide;";
 			x = a('KQ').value;
 			}
 		}
