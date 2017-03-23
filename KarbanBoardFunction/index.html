@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaban Board</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="about.css">
+	<link href="iconfamilyMaterial+Icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+
+<nav>
+  <div style="background-color: rgba(70, 130, 180, 0.48);" class="nav-wrapper">
+    <a style="text-transform: uppercase;" href="#" class="brand-logo center">kaban board</a>
+    </ul>
+  </div>
+</nav>
+
+<section class="container">
+  <div class="row">
+    <div class="col m4">
+       <div class="card">
+        <ul class="collection with-header">
+        <li class="collection-header center"><h4 style="color: green;">TODO</h4></li>
+          <div id="todo" class="sorted-list">
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+          </div>
+            <li class="collection-item"><input type="text" placeholder="New job" onkeydown="app.newjob(event, 'todo', this)"></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="col m4">
+       <div class="card">
+       <ul class="collection with-header">
+        <li class="collection-header center"><h4 style="color: blue;">DOING</h4></li>
+          <div id="doing" class="sorted-list">
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+          </div>
+            <li class="collection-item"><input type="text" placeholder="New job" onkeydown="app.newjob(event, 'doing', this)"></li>
+      </ul>
+      </div>
+    </div>
+
+  <div class="col m4">
+       <div class="card">
+       <ul class="collection with-header">
+        <li class="collection-header center"><h4 style="color: brown;">DONE</h4></li>
+          <div id="done" class="sorted-list">
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+            <li class="collection-item">Alvin<span class="badge" onclick="app.deletejob(this);"><i class="material-icons">delete</i></span></li>
+          </div>
+            <li class="collection-item"><input type="text" placeholder="New job" onkeydown="app.newjob(event, 'done', this)"></li>
+      </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="delete-confirm" class="modal">
+    <div class="modal-content">
+      <h4>Thông báo</h4>
+      <p>Bạn muốn xóa công việc này?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="waves-effect waves-light btn" id="btn-delete">Đồng ý</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Hủy</a>
+    </div>
+</div>
+
+<script src="jquery-2.1.1.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
