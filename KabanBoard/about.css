@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+	text-decoration: none;
+}
+
+body{
+	background-color:rgba(205, 220, 57, 0.51);
+}
+
+#table1 li{
+	background-color: rgba(139, 195, 74, 0.52);
+}
+#table1 li:hover{
+	background-color:  rgba(158, 158, 158, 0.22);
+}
+
+#table2 li{
+	background-color: rgba(255, 235, 59, 0.36);
+}
+#table2 li:hover{
+	background-color: rgba(139, 195, 74, 0.52);
+}
+
+#table3 li{
+	background-color: rgba(158, 158, 158, 0.22);
+}
+#table3 li:hover{
+	background-color: rgba(255, 235, 59, 0.36);
+}
+

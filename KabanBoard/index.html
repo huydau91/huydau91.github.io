@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaban Board</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="about.css">
+	<link href="fonts.googleapis.com-iconfamilyMaterial+Icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrapper">
+    <a style="text-transform: uppercase;" href="#" class="brand-logo center">kaban board</a>
+    </ul>
+  </div>
+</nav>
+
+<section class="container">
+  <div class="row">
+    <div class="col m4">
+       <div class="card">
+       <ul id="table1" class="collection with-header">
+        <li class="collection-header center"><h4 style="color: green;">TODO</h4></li>
+          <div class="sorted-list">
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+          </div>
+      </ul>
+      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+
+  <div class="col m4">
+       <div class="card">
+       <ul id="table2" class="collection with-header">
+        <li class="collection-header center"><h4 style="color: blue;">DOING</h4></li>
+          <div class="sorted-list">
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+          </div>
+      </ul>
+      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+
+  <div class="col m4">
+       <div class="card">
+       <ul id="table3" class="collection with-header">
+        <li class="collection-header center"><h4 style="color: brown;">DONE</h4></li>
+          <div class="sorted-list">
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+            <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></div></li>
+          </div>
+      </ul>
+      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="materialize/js/materialize.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $( function() {
+    $( ".sorted-list" ).sortable({
+      connectWith: ".sorted-list"
+    });
+  } );
+</script>
+</body>
+</html>
