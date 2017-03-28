@@ -1,0 +1,306 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/playfairdisplay/playfairdisplay-regular-webfont.eot');
+    src: url('fonts/playfairdisplay/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfairdisplay/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('fonts/playfair-italic/playfairdisplay-italic-webfont.eot');
+    src: url('fonts/playfair-italic/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playfair-italic/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('inconsolata-regular-webfont.eot');
+    src: url('inconsolata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('inconsolata-regular-webfont.svg#inconsolataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('fonts/ubuntu/ubuntu-light-webfont.eot');
+    src: url('fonts/ubuntu/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu/ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'playfair-displayregular';
+	font-size: 14px;
+	color: #626262;
+}
+
+p{
+	text-align: justify;
+}
+
+a{
+	list-style-type: none;
+	text-decoration: none;
+	color: #626262;
+}
+
+.navbar-default .navbar-brand{
+	font-family: 'inconsolataregular';
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #000000;
+}
+
+.navbar-default {
+    padding-top: 50px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.nav>li>a {
+	text-transform: uppercase;
+	padding-left: 60px;
+}
+
+.content{
+	margin: 0px 70px;
+}
+
+.taggioithieu{
+	font-family: 'ubuntulight';
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.titlegioithieu{
+	margin-bottom: 30px;
+}
+.pgioithieu{
+	margin-bottom: 50px;
+}
+.commentgioithieu{
+	font-family: 'ubuntulight';
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 135px;
+}
+
+.thumbnail{
+	border: none;
+	padding: 0px;
+}
+
+.thumbnail img{
+	margin-left: 0px;
+}
+.tagitem{
+	text-transform: uppercase;
+	font-family: 'ubuntulight';
+	margin-bottom: 20px;
+}
+.titleitem{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.contentitem{
+	text-align: justify;
+	margin-bottom: 120px;
+}
+
+.signup{
+	font-size: 30px;
+	color: #333333;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+.loadmore{
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid;
+	padding: 9px 0px;
+	margin-bottom: 1332px;
+}
+
+.footer{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+
+.imgpage1{
+	padding-bottom: 60px;
+}
+.titlepage1{
+	font-family: 'playfair_displayitalic';
+	font-size: 14px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.contentpage1{
+	padding-bottom: 60px;
+}
+.titleimgpage1{
+	font-size: 20px;
+	padding-top: 25px;
+	margin-bottom: 90px;
+}
+.socialpage1 span{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.commentpage1{
+	font-family: 'ubuntulight';
+	text-transform: uppercase;
+	margin-top: 65px;
+	margin-bottom: 35px;
+}
+
+.panel-default {
+    border:none;
+}
+.panel-body {
+    padding: 0px;
+}
+.text-left{
+	text-transform: uppercase;
+	font-family: 'ubuntulight';
+}
+
+.footerpage1 span{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sidebar{
+    width: 750px;
+    float: left;
+    margin-bottom: 25px;
+}
+.right-side{
+    width: 280px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.topposts ul li a{
+	font-size: 16px;
+}
+
+@media (min-width: 1200px){
+	.container {
+    width: 1062px;
+	}
+}
+
+@media (min-width: 768px){
+	.footer.col1{
+		width: 25%;
+	}
+	.footer.col2{
+		width: 55%;
+	}
+
+	.sidebar {
+    width: 70%;
+    margin-right: 3%;
+    float: left;
+	}
+	.right-side {
+    width: 27%;
+    float: left;
+    margin: auto;
+	}
+	.aboutme img{
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px){
+	.loadmore{
+	margin-bottom: 25em;
+	}
+}
+
+@media (max-width: 768px){
+	.thumbnail img {
+    width: 100%;
+	}
+
+	#thumbpage1{
+	width: 100%
+	}
+
+	.signup {
+    font-size: 20px;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 414px){
+	.content {
+    margin: 0px 2em;
+	}
+
+	.signup {
+    font-size: 20px;
+    color: #333333;
+    padding-top: 10px;
+    padding-bottom: 20px;
+	}
+
+	.titleitem {
+    font-size: 20px;
+    margin-bottom: 10px;
+	}
+
+	.contentitem {
+    margin-bottom: 60px;
+	}
+
+	.footer{
+	float: none;
+	}
+
+	.sidebar {
+    width: 100%;
+    float: none;
+	}
+	.right-side {
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+	}
+	.aboutme img{
+		width: 100%;
+	}
+}
