@@ -1,7 +1,7 @@
 var cards = ['luffy', 'zoro', 'nami', 'law', 'ace', 'frank', 'robin', 'shank', 'sanji', 'hawkeye', 'kid', 'brook'];
 var current = null;
 var count = 0;
-var time = 30;
+var time = 300;
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -36,9 +36,6 @@ $(function(){
 
 		if(time == 0){
 			clearInterval(run);
-			// $('#thongbao').modal('open');
-			// loadcards = "Bạn đã thua cuộc, số điểm của bạn là: " + count;
-			// $('.grid').html(loadcards);
 			alert("Bạn đã thua cuộc, số điểm của bạn là: " + count);
 			$('.card').css('pointer-events', 'none');
 		}
