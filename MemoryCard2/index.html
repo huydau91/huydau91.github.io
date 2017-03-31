@@ -12,19 +12,64 @@
 	<div class="banner">
 		<img src="img/banner.jpg" class="img-responsive">
 	</div>
+
+	<div class="timer progress-bar progress-bar-striped active">
+    </div>
+
 	<div class="grid">
+	</div>
+
+	<div class="batdau">
+	    <div class="dialog">
+	        <h1>one  piece</h1>
+	        <h3>DIFFICULT</h3>
+	        <di class="row">
+		        <button class="btn" onclick="normal();">NORMAL</button>
+		        <button class="btn" onclick="hard();">HARD</button>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="lose">
+	    <div class="dialog">
+	    	<img src="img/lose.jpg" class="img-responsive">
+	        <h1></h1>
+	        <button class="btn"  onclick="window.location.reload()">CHƠI LẠI</button>
+	    </div>
+	</div>
+
+	<div class="win">
+	    <div class="dialog">
+	    	<img src="img/win.jpg" class="img-responsive">
+	        <h1></h1>
+	        <button class="btn"  onclick="window.location.reload()">CHƠI LẠI</button>
+	    </div>
 	</div>
 </div>
 
-<!-- <div id="thongbao" class="modal">
-    <div class="modal-content">
-      <p></p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="waves-effect waves-light btn" id="btn-delete">Chơi tiếp</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Bỏ qua</a>
-    </div>
-</div> -->
+<audio id="nhacnen">
+	<source src="sound/background.mp3">
+</audio>
+
+<audio id="click">
+	<source src="sound/click.mp3">
+</audio>
+
+<audio id="dung">
+	<source src="sound/dung.mp3">
+</audio>
+
+<audio id="sai">
+	<source src="sound/sai.mp3">
+</audio>
+
+<audio id="hetgio">
+	<source src="sound/hetgio.mp3">
+</audio>
+
+<audio id="victory">
+	<source src="sound/victory.mp3">
+</audio>
 
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
