@@ -75,7 +75,7 @@ body{
 
 @media (min-width: 320px){
 	.card {
-		max-width: 12%;
+		max-width: 16%;
 	    padding: 0.2em;
 	    margin-left: 0.1em;
 	}
