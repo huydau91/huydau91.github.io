@@ -7,47 +7,33 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/test.css">
     <title>Cho thuê phòng trọ, nhà trọ, tìm phòng trọ</title>
-
 </head>
 <body>
+
+<div class="background" id="top">
 <!-- First menu -->
-<div class="first-menu">
+<div class="first-menu desktop">
     <div class="container">
-        <div class="item item1"><label>Phongtro.com</label></div>
-        <div class="item item2"><a href="#" data-toggle="modal" data-target="#sign-in"><span
+        <label>Phongtro.com</label>
+        <div class="item"><a href="#"><span>Tin đã lưu</span></a></div>
+        <div class="item"><a href="#"><span>Hướng dẫn</span></a></div>
+        <div class="item"><a href="#">Đăng tin</a></div>
+        <div class="item"><a href="#" data-toggle="modal" data-target="#sign-in"><span
                 class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></div>
-        <div class="item item3"><a href="#" data-toggle="modal" data-target="#sign-up"><span
+        <div class="item" style="background: rgba(100, 149, 237, 0.7);"><a href="#" data-toggle="modal" data-target="#sign-up"><span
                 class="glyphicon glyphicon-user"></span> Đăng ký</a></div>
     </div>
 </div>
 
-<!-- Back to top -->
-<div id="top"></div>
-
-<!-- Second menu -->
-<div class="second-menu desktop">
-    <div class="container">
-        <div class="item home" style="background: #ffa239;"><a href="#"><span class="fa fa-home"></span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê phòng trọ</span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê nhà riêng</span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê chung cư</span></a></div>
-        <div class="item"><a href="#"><span>Tìm người ở ghép</span></a></div>
-        <div class="item"><a href="#"><span>Tin đã lưu</span></a></div>
-        <div class="item"><a href="#"><span>Hướng dẫn</span></a></div>
-        <div class="item"><a href="#"><span>Nạp tiền</span></a></div>
-        <div class="item dangtin" style="background: #ffa239;"><a href="#">Đăng tin</a></div>
-    </div>
-</div>
-
-<div class="second-menu mobile">
+<div class="first-menu mobile">
     <div class="container">
         <div class="navbar-header">
             <label>Phongtro.com</label>
             <div class="navbar-toggle">
-                <i class="fa fa-bars" data-toggle="collapse" data-target="#second-menu"></i>
+                <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
             </div>
         </div>
-        <div class="collapse navbar-collapse" id="second-menu">
+        <div class="collapse navbar-collapse" id="first-menu">
             <ul class="nav navbar-nav">
                 <li><a href="#" data-toggle="modal" data-target="#sign-in"><span
                         class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
@@ -55,12 +41,12 @@
                         class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
                 <li><a href="#"><span>Tin đã lưu<span></a></li>
                 <li><a href="#"><span>Hướng dẫn<span></a></li>
-                <li><a href="#"><span>Nạp tiền<span></a></li>
                 <li><a href="#" style="background: #ffa239;">Đăng tin</a></li>
             </ul>
         </div>
     </div>
 </div>
+<!-- HẾT First menu -->
 
 <!-- Lưu ý người dùng tìm kiếm - bản mobile -->
 <div class="notice mobile">
@@ -69,8 +55,9 @@
         <a href="#"><span>Tìm hiểu thêm</span></a>
     </div>
 </div>
+<!-- HẾT Lưu ý người dùng tìm kiếm - bản mobile -->
 
-<!-- Bảng tìm kiếm-->
+<!-- Bảng tìm kiếm desktop -->
 <div class="search-box desktop">
     <div class="container">
         <p>Tìm kiếm phòng trọ</p>
@@ -228,6 +215,10 @@
         </div>
     </div>
 </div>
+<!-- HẾT Bảng tìm kiếm desktop -->
+
+</div>
+<!-- HẾT Background -->
 
 <div class="search-box mobile">
     <div class="container">
@@ -529,6 +520,7 @@
         </div>
     </div>
 </div>
+<!-- HẾT Footer -->
 
 <!-- Back to top -->
 <div class="backtotop">

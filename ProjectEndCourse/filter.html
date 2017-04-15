@@ -10,60 +10,47 @@
 
 </head>
 <body>
+
+<div class="background" id="top">
 <!-- First menu -->
-<div class="first-menu">
+<div class="first-menu desktop">
     <div class="container">
-        <div class="item item1"><label>Phongtro.com</label></div>
-        <div class="item item2"><a href="#" data-toggle="modal" data-target="#sign-in"><span
+        <label>Phongtro.com</label>
+        <div class="item"><a href="#"><span>Tin đã lưu</span></a></div>
+        <div class="item"><a href="#"><span>Hướng dẫn</span></a></div>
+        <div class="item"><a href="#">Đăng tin</a></div>
+        <div class="item"><a href="#" data-toggle="modal" data-target="#sign-in"><span
                 class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></div>
-        <div class="item item3"><a href="#" data-toggle="modal" data-target="#sign-up"><span
+        <div class="item" style="background: rgba(100, 149, 237, 0.7);"><a href="#" data-toggle="modal" data-target="#sign-up"><span
                 class="glyphicon glyphicon-user"></span> Đăng ký</a></div>
     </div>
 </div>
-<!-- HẾT First menu -->
 
-<!-- Back to top -->
-<div id="top"></div>
-<!-- HẾT Back to top -->
-
-<!-- Second menu -->
-<div class="second-menu desktop">
-    <div class="container">
-        <div class="item home" style="background: #ffa239;"><a href="#"><span class="fa fa-home"></span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê phòng trọ</span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê nhà riêng</span></a></div>
-        <div class="item"><a href="#"><span>Cho thuê chung cư</span></a></div>
-        <div class="item"><a href="#"><span>Tìm người ở ghép</span></a></div>
-        <div class="item"><a href="#"><span>Tin đã lưu</span></a></div>
-        <div class="item"><a href="#"><span>Hướng dẫn</span></a></div>
-        <div class="item"><a href="#"><span>Nạp tiền</span></a></div>
-        <div class="item dangtin" style="background: #ffa239;"><a href="#">Đăng tin</a></div>
-    </div>
-</div>
-
-<div class="second-menu mobile">
+<div class="first-menu mobile">
     <div class="container">
         <div class="navbar-header">
             <label>Phongtro.com</label>
             <div class="navbar-toggle">
-                <i class="fa fa-bars" data-toggle="collapse" data-target="#second-menu"></i>
+                <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
             </div>
         </div>
-        <div class="collapse navbar-collapse" id="second-menu">
+        <div class="collapse navbar-collapse" id="first-menu">
             <ul class="nav navbar-nav">
                 <li><a href="#" data-toggle="modal" data-target="#sign-in"><span
                         class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#sign-up"><span
                         class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-                <li><a href="#"><span>Tin đã lưu<span></a></li>    
+                <li><a href="#"><span>Tin đã lưu<span></a></li>
                 <li><a href="#"><span>Hướng dẫn<span></a></li>
-                <li><a href="#"><span>Nạp tiền<span></a></li>
                 <li><a href="#" style="background: #ffa239;">Đăng tin</a></li>
             </ul>
         </div>
     </div>
 </div>
-<!-- HẾT Second menu -->
+<!-- HẾT First menu -->
+
+</div>
+<!-- HẾT Background -->
 
 <!-- FILTER-DESKTOP -->
 <div class="container filter desktop">
@@ -89,8 +76,20 @@
                 <span class="date">Ngày đăng: 13/04/2017</span>
             </div>
             <div class="col-sm-3">
-                <img src="detail/page1/1.jpg">
+                <div class="anh">
+                    <img class="slide-anh-desktop" src="detail/page1/1.jpg">
+                    <img class="slide-anh-desktop" src="detail/page1/2.jpg">
+                    <img class="slide-anh-desktop" src="detail/page1/3.jpg">
+                    <img class="slide-anh-desktop" src="detail/page1/4.jpg">
+                    <img class="slide-anh-desktop" src="detail/page1/5.jpg">
+                    <img class="slide-anh-desktop" src="detail/page1/6.jpg">
+                    <div class="button">
+                        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    </div>
+                </div>
             </div>
+            
             <div class="col-sm-6">
                 <p class="mota">Nhà tôi chính chủ còn 1 phòng trống cần cho thuê gấp vào ở được ngay, tại địa chỉ số 131A ngõ 105/20 đường Doãn Kế Thiện, Mai Dịch, cách nhà nghỉ Thanh Trà 2: 10m.
                 </p>
@@ -412,7 +411,19 @@
         </div>
         <div class="date">Ngày đăng: 13/04/2017</div>
 
-        <img src="detail/page1/1.jpg">
+        <div class="anh">
+                    <img class="slide-anh-mobile" src="detail/page1/1.jpg">
+                    <img class="slide-anh-mobile" src="detail/page1/2.jpg">
+                    <img class="slide-anh-mobile" src="detail/page1/3.jpg">
+                    <img class="slide-anh-mobile" src="detail/page1/4.jpg">
+                    <img class="slide-anh-mobile" src="detail/page1/5.jpg">
+                    <img class="slide-anh-mobile" src="detail/page1/6.jpg">
+                    <div class="button">
+                        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                    </div>
+        </div>
+
         <div class="container">
             <div class="col-xs-6 item1">
                 <p class="gia">Giá: 3 triệu/tháng</p>
@@ -539,8 +550,7 @@
         </div>
     </div>
     <!-- HẾT Đánh số trang-->
-
-    <div class="search-box mobile">
+    <div class="search-box">
         <div class="container">
             <p>Tìm kiếm phòng trọ</p>
             <div class="row">
@@ -854,5 +864,6 @@
 <!-- HẾT Modal -->
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/filter.js"></script>
 </body>
 </html>
