@@ -53,6 +53,9 @@ a:hover, a:focus {
     color: white;
     font-size: 3rem;
 }
+.first-menu.desktop label a{
+    padding: 0px;
+}
 
 .first-menu.desktop .item:hover {
     background: rgba(3, 60, 105, 0.47);

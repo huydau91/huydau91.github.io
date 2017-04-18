@@ -53,6 +53,9 @@ a:hover, a:focus {
     color: white;
     font-size: 3rem;
 }
+.first-menu.desktop label a{
+    padding: 0px;
+}
 
 .first-menu.desktop .item:hover {
     background: rgba(3, 60, 105, 0.47);
@@ -244,9 +247,6 @@ a:hover, a:focus {
     top: 45%;
     width: 100%;
 }
-.detail.desktop .block-left .col-sm-5 .button{
-    margin-top: 33px;
-}
 .detail.desktop .block-left .col-sm-5 button:hover{
     background: rgba(76, 175, 80, 0.8);
     color: #ffffff;
@@ -261,8 +261,43 @@ a:hover, a:focus {
 .w3-display-right{
     float: right;
 }
-.tienich, .noidung, .bando, .binhluan, .form-group{
-    padding-top: 3rem;
+.binhluan{
+    display: none;
+}
+.binhluan.active{
+    display: initial;
+}
+.detail.desktop .block-left .row.header .status{
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+    display: none;
+}
+.detail.desktop .block-left .row.header .status.active{
+    background: rgb(100, 149, 237);
+    color: #ffffff;
+    display: inline-block;
+}
+.detail.desktop .block-left .row.header .status.closed.active{
+    background: #E91E63;
+    color: #ffffff;
+}
+.detail.desktop .save{
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+}
+.save-page{
+    cursor: pointer;
+}
+input.save-page{
+    display: none;
+}
+input.save-page:checked ~ label.save.save-page{
+    color: #ffffff;
+    background: #E91E63;
 }
 .detail.desktop .block-left .row.content .fa{
     font-size: initial;
@@ -271,6 +306,7 @@ a:hover, a:focus {
     text-transform: uppercase;
     font-weight: 600;
     border-bottom-style: groove;
+    padding-top: 3rem;
 }
 
 
@@ -321,6 +357,7 @@ a:hover, a:focus {
     text-transform: uppercase;
     font-weight: 600;
     border-bottom-style: groove;
+    padding-top: 3rem;
 }
 .detail.mobile .binhluan .col-xs-6{
     margin-bottom: 1rem;
@@ -384,7 +421,41 @@ a:hover, a:focus {
     border: none;
     margin-bottom: 1rem;
 }
-
+.detail.mobile .status{
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+    display: none;
+}
+.detail.mobile .status.active{
+    background: rgb(100, 149, 237);
+    color: #ffffff;
+    display: inline-block;
+}
+.detail.mobile .status.closed.active{
+    background: #E91E63;
+    color: #ffffff;
+}
+.detail.mobile .save{
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+}
+.fa-users{
+    display: none;
+}
+.fa-users.active{
+    display: initial;
+}
+input.save-page-mobile{
+    display: none;
+}
+input.save-page-mobile:checked ~ label.save.save-page-mobile{
+    color: #ffffff;
+    background: #E91E63;
+}
 /*HẾT CSS TRANG detail*/
 
 
@@ -438,5 +509,21 @@ a:hover, a:focus {
         font-size: 1.5rem;
         color: white;
         text-align: center;
+    }
+    .first-menu.desktop {
+        font-size: 1rem;
+    }
+    .first-menu.desktop label{
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+    .search-box.desktop{
+        font-size: 1rem;
+    }
+    .dangtin.desktop .search-box p {
+        font-size: 1rem;
+    }
+    .dangtin.desktop .search-box {
+        font-size: 1rem;
     }
 }
