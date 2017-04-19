@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff'),
+    url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+    url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: "robotoregular", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.first-menu.desktop {
+    text-align: center;
+    background-image: url("bg-filter.jpg");
+}
+.first-menu.desktop .container {
+    display: flex;
+}
+
+.first-menu.desktop a{
+    color: #fff;
+    padding: 2rem;
+    display: block;
+    font-weight: 600;
+}
+.first-menu.desktop label{
+    flex-grow: 1;
+    text-align: left;
+    padding: 0.9rem;
+    padding-left: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+}
+.first-menu.desktop label a{
+    padding: 0px;
+}
+
+.first-menu.desktop .item:hover {
+    background: rgba(3, 60, 105, 0.47);
+}
+
+.first-menu.mobile {
+    background: rgba(100, 149, 237, 0.9);
+    color: #fff;
+}
+
+.first-menu.mobile a {
+    color: #fff;
+}
+
+.first-menu.mobile a:hover{
+    background: rgba(4, 74, 132, 0.9);
+}
+
+.first-menu.mobile label {
+    margin-bottom: 0px;
+    padding: 2rem;
+}
+
+.promotion {
+    text-align: justify;
+    background: #f2f2f2;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.promotion .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.promotion .col-sm-5 {
+    border-right-style: ridge;
+}
+
+.promotion-benefit {
+    font-size: 1.7rem;
+}
+
+.promotion .fa {
+    padding-right: 1rem;
+    color: rgb(100, 149, 237);
+}
+
+.footer {
+    padding-top: 4rem;
+    text-align: justify;
+}
+
+.footer a {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.footer .col-sm-2 label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #337ab7;
+}
+
+.footer .col-sm-2 p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.backtotop {
+    position: fixed;
+    width: 5%;
+    bottom: 0px;
+    right: 6%;
+}
+
+.backtotop img {
+    width: 100%;
+}
+
+.modal-dialog {
+    background: #d9edf7;
+    text-align: center;
+    width: 30%;
+}
+
+.sign-up {
+    padding: 3rem 6rem;
+}
+
+.sign-up h2 {
+    margin-top: 0px;
+}
+
+.sign-up .email, .sign-up .password, .sign-up .hoten, .sign-up .sodienthoai, .sign-up .submit {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.sign-up .checkbox {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.sign-up-facebook {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #3B5998;
+    color: white;
+}
+
+.sign-up .submit {
+    color: white;
+    background: #00b242;
+    font-weight: 600;
+}
+
+.sign-in {
+    padding: 3rem 6rem;
+}
+
+.sign-in h2 {
+    margin-top: 0px;
+}
+
+.sign-in .email, .sign-in .password, .sign-in .hoten, .sign-in .sodienthoai, .sign-in .submit {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.sign-in .checkbox {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.sign-in-facebook {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #3B5998;
+    color: white;
+}
+
+.sign-in .submit {
+    color: white;
+    background: #00b242;
+    font-weight: 600;
+}
+
+/*CSS TRANG huongdan*/
+.huongdan.desktop{
+    margin-top: 3rem;
+}
+.huongdan.desktop .block-left{
+    width: 79%;
+    float: left;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+
+.huongdan.desktop .block-right{
+    width: 20%;
+    float: right;
+    background: rgb(100, 149, 237);
+    font-size: 1.3rem;
+}
+
+/*SEARCH TRANG huongdan*/
+
+.huongdan.desktop .search-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.huongdan.desktop .block-right .row{
+    margin: 0px;
+}
+.huongdan.desktop .search-box p {
+    background: #ffa80f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1rem 1rem 1rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.huongdan.desktop .search-box select {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.huongdan.desktop .search-box button {
+    background: #ffa80f;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+
+.huongdan.mobile{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+.huongdan.mobile img{
+    width: 100%;
+}
+.huongdan.mobile .search-box {
+    background-image: url("bg-search-box.jpg");
+}
+
+.huongdan.mobile .search-box p {
+    background: rgba(100, 149, 237, 0.9);
+    color: #ffffff;
+    display: inline-block;
+    padding: 1rem 1rem 1rem;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.huongdan.mobile .search-box .row {
+    margin: 0px;
+    padding-top: 1rem;
+    background: rgba(100, 149, 237, 0.9);
+    margin-bottom: 2rem;
+}
+.huongdan.mobile .search-box .container{
+    padding: 1rem;
+}
+
+.huongdan.mobile .search-box select {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.huongdan.mobile .search-box button {
+    background: #ffa80f;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+/*HẾT CSS TRANG huongdan*/
+
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .first-menu {
+        display: none;
+    }
+
+    .mobile {
+        display: inherit;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .footer-center a {
+        padding: 0px;
+    }
+
+    .backtotop {
+        width: 10%;
+    }
+
+    .modal-dialog {
+        width: inherit;
+        margin-top: 8rem;
+    }
+
+    .sign-up {
+        padding: 1rem 2rem;
+    }
+
+    .sign-in {
+        padding: 1rem 2rem;
+    }
+    .promotion .col-sm-5{
+        border: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container.featured-cities.desktop .p2 {
+        position: absolute;
+        width: 90%;
+        top: 72%;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+    .first-menu.desktop {
+        font-size: 1rem;
+    }
+    .first-menu.desktop label{
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+    .huongdan.desktop .search-box {
+        font-size: 1rem;
+    }
+    .huongdan.desktop .search-box p {
+        font-size: 1rem;
+    }
+}
