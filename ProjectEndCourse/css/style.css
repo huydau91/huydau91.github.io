@@ -31,7 +31,9 @@ a:hover, a:focus {
 .background{
     background-image: url("background.jpg");
 }
-
+.fa{
+    color: rgb(100, 149, 237);
+}
 .first-menu.desktop {
     text-align: center;
 }
