@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hoso.css">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <title>Cho thuê phòng trọ, nhà trọ, tìm phòng trọ</title>
+</head>
+
+<body>
+<div class="background" id="top">
+    <!-- First menu -->
+    <div class="first-menu desktop">
+        <div class="container">
+            <label><a href="index.html">Phongtro.com</a></label>
+            <div class="item"><a href="#"><span>Tin đã lưu</span></a></div>
+            <div class="item"><a href="huongdan.html"><span>Hướng dẫn</span></a></div>
+            <div class="item"><a href="dangtin.html">Đăng tin</a></div>
+            <div class="item avatar">
+                <div class="dropdown">
+                    <img src="img/avatar.jpg" data-toggle="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a href="hoso.html">Hồ sơ cá nhân</a></li>
+                        <li><a href="#">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="first-menu mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <label><a href="index.html">Phongtro.com</a></label>
+                <div class="navbar-toggle">
+                    <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="first-menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="item avatar">
+                            <div class="dropdown">
+                                <img src="img/avatar.jpg" data-toggle="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a href="hoso.html">Hồ sơ cá nhân</a></li>
+                                    <li><a href="#">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#"><span>Tin đã lưu<span></a></li>
+                    <li><a href="huongdan.html"><span>Hướng dẫn<span></a></li>
+                    <li><a href="dangtin.html" style="background: #ffa239;">Đăng tin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT First menu -->
+
+</div>
+<!-- HẾT Background -->
+
+<!-- Hồ sơ cá nhân -->
+<div style="background: #F3F3F3; padding-bottom: 3rem;">
+    <div class="container" style="font-size: 1.5rem;">
+        <h3 style="text-align: center; font-weight: 600; margin-bottom: 2rem;">Hồ sơ cá nhân</h3>
+
+        <div class="hoso desktop">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Ảnh đại diện</label>
+                </div>
+
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="img/avatar.jpg">
+                            </td>
+
+                            <td style="padding-left: 2rem;">
+                                <button><i class="fa fa-upload"></i> Chọn/Đăng ảnh đại diện</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 2rem;">
+                                Bạn có thể tải ảnh đại diện của mình từ máy tính hoặc chọn 1 ảnh trong thư viện có sẵn
+                                của chúng tôi.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Họ và tên</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="Anh Tuấn">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Email</label>
+                </div>
+
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td>
+                                huydau@gmail.com
+                            </td>
+                            <td>
+                                <button class="item"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td>
+                                *******************
+                            </td>
+                            <td>
+                                <button class="item"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Số điện thoại</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="0987 654 321">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Địa chỉ</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row" style="text-align: center;">
+                <button><i class="fa fa-floppy-o"></i> Lưu thông tin</button>
+            </div>
+        </div>
+
+        <div class="hoso mobile">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Ảnh đại diện</label>
+                </div>
+
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <img src="img/avatar.jpg">
+                            </td>
+
+                            <td style="padding-left: 2rem; text-align: justify; overflow: none; white-space: initial;">
+                                Bạn có thể tải ảnh đại diện của mình từ máy tính hoặc chọn 1 ảnh trong thư viện có sẵn
+                                của chúng tôi.
+                            </td>                            
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 2rem; text-align: right;">
+                                <button><i class="fa fa-upload"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Họ và tên</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="Anh Tuấn">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Email</label>
+                </div>
+
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td>
+                                huydau@gmail.com
+                            </td>
+                            <td>
+                                <button class="item"><i class="fa fa-pencil-square-o"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td>
+                                *******************
+                            </td>
+                            <td>
+                                <button class="item"><i class="fa fa-pencil-square-o"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Số điện thoại</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="0987 654 321">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Địa chỉ</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row" style="text-align: center;">
+                <button><i class="fa fa-floppy-o"></i> Lưu thông tin</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HẾT Hồ sơ cá nhân -->
+
+<!-- Back to top -->
+<div class="backtotop">
+    <a href="#top">
+        <img src="img/backtotop.png" class="img-responsive">
+    </a>
+</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

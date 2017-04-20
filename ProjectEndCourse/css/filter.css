@@ -27,24 +27,28 @@ a {
 a:hover, a:focus {
     text-decoration: none;
 }
-.background{
+
+.background {
     background-image: url(background.jpg);
 }
+
 .first-menu.desktop {
     text-align: center;
     background-image: url("bg-filter.jpg");
 }
+
 .first-menu.desktop .container {
     display: flex;
 }
 
-.first-menu.desktop a{
+.first-menu.desktop a {
     color: #fff;
     padding: 2rem;
     display: block;
     font-weight: 600;
 }
-.first-menu.desktop label{
+
+.first-menu.desktop label {
     flex-grow: 1;
     text-align: left;
     padding: 0.9rem;
@@ -53,7 +57,8 @@ a:hover, a:focus {
     color: white;
     font-size: 3rem;
 }
-.first-menu.desktop label a{
+
+.first-menu.desktop label a {
     padding: 0px;
 }
 
@@ -70,7 +75,7 @@ a:hover, a:focus {
     color: #fff;
 }
 
-.first-menu.mobile a:hover{
+.first-menu.mobile a:hover {
     background: rgba(4, 74, 132, 0.9);
 }
 
@@ -242,54 +247,65 @@ a:hover, a:focus {
 
 /*CSS TRANG FILTER*/
 
-.filter.desktop .block-left{
+.filter.desktop .block-left {
     width: 79%;
     float: left;
     margin-top: 3rem;
 }
-.filter.desktop .block-left .anh{
+
+.filter.desktop .block-left .anh {
     position: relative;
 }
-.filter.desktop .block-left .anh .button{
+
+.filter.desktop .block-left .anh .button {
     position: absolute;
     top: 40%;
     width: 100%;
 }
-.filter.desktop .block-left .anh .w3-button{
+
+.filter.desktop .block-left .anh .w3-button {
     font-size: 2rem;
     background: none;
     border: none;
     padding: 1rem;
     color: #ffffff;
 }
-.w3-display-right{
+
+.w3-display-right {
     float: right;
 }
-.filter.desktop .block-left img{
+
+.filter.desktop .block-left img {
     width: 100%;
 }
-.filter.desktop .block-left h4{
+
+.filter.desktop .block-left h4 {
     margin: auto;
 }
-.filter.desktop .block-left .header{
+
+.filter.desktop .block-left .header {
     display: flex;
     margin-bottom: 2rem;
 }
-.filter.desktop .block-left .header span{
+
+.filter.desktop .block-left .header span {
     flex-grow: 1;
 }
-.filter.desktop .block-left .row{
+
+.filter.desktop .block-left .row {
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-top-style: outset;
     margin: 0px;
     text-align: justify;
 }
-.filter.desktop .block-left .row-header{
+
+.filter.desktop .block-left .row-header {
     display: flex;
     margin-bottom: 1rem;
 }
-.filter.desktop .block-left .title{
+
+.filter.desktop .block-left .title {
     color: #128dda;
     font-weight: bolder;
     flex: 4;
@@ -297,94 +313,109 @@ a:hover, a:focus {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.filter.desktop .block-left .date{
+
+.filter.desktop .block-left .date {
     flex: 1;
     text-align: right;
     font-style: italic;
 }
-.filter.desktop .block-left .col-sm-3{
+
+.filter.desktop .block-left .col-sm-3 {
     padding: 0px;
     font-weight: bold;
 }
-.filter.desktop .block-left .col-sm-3 .button{
+
+.filter.desktop .block-left .col-sm-3 .button {
     padding-top: 5px;
 
 }
-.filter.desktop .block-left .col-sm-3 p{
+
+.filter.desktop .block-left .col-sm-3 p {
     margin-bottom: 0.6rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.filter.desktop .block-left .col-sm-3 a{
+
+.filter.desktop .block-left .col-sm-3 a {
     color: #fff;
 }
-.filter.desktop .block-left .mota{
+
+.filter.desktop .block-left .mota {
     height: 95px;
     overflow: hidden;
 }
-.filter.desktop .block-left .status{
+
+.filter.desktop .block-left .status {
     margin-bottom: 0px;
     padding: 0.7rem;
     border-radius: 5px;
     background: #dddddd;
     display: none;
 }
-.filter.desktop .block-left .status.active{
+
+.filter.desktop .block-left .status.active {
     background: rgb(100, 149, 237);
     color: #ffffff;
     display: inline-block;
 }
-.filter.desktop .block-left .status.closed.active{
+
+.filter.desktop .block-left .status.closed.active {
     background: #E91E63;
     color: #ffffff;
 }
 
-.filter.desktop .block-left .save{
+.filter.desktop .block-left .save {
     margin-bottom: 0px;
     padding: 0.7rem;
     border-radius: 5px;
     background: #dddddd;
 }
-.filter.desktop .block-left .save.active{
+
+.filter.desktop .block-left .save.active {
     background: rgb(100, 149, 237);
     color: #ffffff;
 }
-.save-page1, .save-page2, .save-page3, .save-page4, .save-page5{
+
+.save-page1, .save-page2, .save-page3, .save-page4, .save-page5 {
     cursor: pointer;
 }
-input.save-page1, input.save-page2, input.save-page3, input.save-page4, input.save-page5{
+
+input.save-page1, input.save-page2, input.save-page3, input.save-page4, input.save-page5 {
     display: none;
 }
-input.save-page1:checked ~ label.save.save-page1{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page2:checked ~ label.save.save-page2{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page3:checked ~ label.save.save-page3{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page4:checked ~ label.save.save-page4{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page5:checked ~ label.save.save-page5{
+
+input.save-page1:checked ~ label.save.save-page1 {
     color: #ffffff;
     background: #E91E63;
 }
 
-.filter.desktop .block-left .fa-users.active{
+input.save-page2:checked ~ label.save.save-page2 {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+input.save-page3:checked ~ label.save.save-page3 {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+input.save-page4:checked ~ label.save.save-page4 {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+input.save-page5:checked ~ label.save.save-page5 {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+.filter.desktop .block-left .fa-users.active {
     color: rgb(100, 149, 237);
     font-size: 2rem;
 }
 
-
-
-.filter.desktop .block-right{
+.filter.desktop .block-right {
     width: 20%;
     float: right;
     background: rgb(100, 149, 237);
@@ -398,17 +429,20 @@ input.save-page5:checked ~ label.save.save-page5{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.filter.desktop .block-right .row{
+
+.filter.desktop .block-right .row {
     margin: 0px;
 }
+
 .filter.desktop .search-box p {
-    background: #ffa80f;
+    font-weight: 600;
+    text-align: center;
     color: #ffffff;
-    display: inline-block;
     padding: 1rem 1rem 1rem;
     font-size: 1.6rem;
     margin-top: 1rem;
 }
+
 .filter.desktop .search-box select {
     padding: 1rem 2rem;
     width: 100%;
@@ -424,64 +458,75 @@ input.save-page5:checked ~ label.save.save-page5{
     margin-bottom: 1rem;
 }
 
-
-
-.filter.mobile img{
+.filter.mobile img {
     width: 100%;
 }
-.filter.mobile .anh{
+
+.filter.mobile .anh {
     position: relative;
 }
-.filter.mobile .anh .button{
+
+.filter.mobile .anh .button {
     position: absolute;
     width: 100%;
     top: 40%;
 }
-.filter.mobile .anh .w3-button{
+
+.filter.mobile .anh .w3-button {
     font-size: 2rem;
     background: none;
     border: none;
     padding: 2rem;
     color: #ffffff;
 }
-.filter.mobile .header{
+
+.filter.mobile .header {
     text-align: center;
     padding: 1rem;
 }
-.filter.mobile .sort{
+
+.filter.mobile .sort {
     text-align: right;
     margin-bottom: 1rem;
 }
-.filter.mobile .title{
+
+.filter.mobile .title {
     text-align: justify;
     margin-bottom: 1rem;
 }
-.filter.mobile .content{
+
+.filter.mobile .content {
     margin: 0px;
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-top-style: outset;
 }
-.filter.mobile .container{
+
+.filter.mobile .container {
     padding: 0px;
 }
-.filter.mobile .item1{
+
+.filter.mobile .item1 {
     margin-top: 1rem;
 }
-.filter.mobile .item1 p{
+
+.filter.mobile .item1 p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.filter.mobile .item1 .btn{
+
+.filter.mobile .item1 .btn {
     margin-bottom: 0;
     margin-top: 0.8rem;
 }
+
 .filter.mobile .item2 {
     margin-top: 1rem;
     text-align: center;
 }
-.filter.mobile .status{
+
+.filter.mobile .status {
     margin-bottom: 1rem;
     width: 100%;
     padding: 1rem;
@@ -489,16 +534,19 @@ input.save-page5:checked ~ label.save.save-page5{
     background: #dddddd;
     display: none;
 }
-.filter.mobile .status.active{
+
+.filter.mobile .status.active {
     background: rgb(100, 149, 237);
     color: #ffffff;
     display: inline-block;
 }
-.filter.mobile .status.closed.active{
+
+.filter.mobile .status.closed.active {
     background: #E91E63;
     color: #ffffff;
 }
-.filter.mobile .save{
+
+.filter.mobile .save {
     margin-top: 1rem;
     margin-bottom: 0px;
     padding: 0.7rem;
@@ -506,48 +554,58 @@ input.save-page5:checked ~ label.save.save-page5{
     background: #dddddd;
     width: 48%;
 }
-.filter.mobile .save.active{
+
+.filter.mobile .save.active {
     background: rgb(100, 149, 237);
     color: #ffffff;
 }
-.filter.mobile .save a{
+
+.filter.mobile .save a {
     color: #ffffff;
 }
-.save-page1-mobile, .save-page2-mobile, .save-page3-mobile, .save-page4-mobile, .save-page5-mobile{
+
+.save-page1-mobile, .save-page2-mobile, .save-page3-mobile, .save-page4-mobile, .save-page5-mobile {
     cursor: pointer;
 }
-input.save-page1-mobile, input.save-page2-mobile, input.save-page3-mobile, input.save-page4-mobile, input.save-page5-mobile{
+
+input.save-page1-mobile, input.save-page2-mobile, input.save-page3-mobile, input.save-page4-mobile, input.save-page5-mobile {
     display: none;
 }
-input.save-page1-mobile:checked ~ label.save.save-page1-mobile{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page2-mobile:checked ~ label.save.save-page2-mobile{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page3-mobile:checked ~ label.save.save-page3-mobile{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page4-mobile:checked ~ label.save.save-page4-mobile{
-    color: #ffffff;
-    background: #E91E63;
-}
-input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
+
+input.save-page1-mobile:checked ~ label.save.save-page1-mobile {
     color: #ffffff;
     background: #E91E63;
 }
 
+input.save-page2-mobile:checked ~ label.save.save-page2-mobile {
+    color: #ffffff;
+    background: #E91E63;
+}
 
-.fa-users{
+input.save-page3-mobile:checked ~ label.save.save-page3-mobile {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+input.save-page4-mobile:checked ~ label.save.save-page4-mobile {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+input.save-page5-mobile:checked ~ label.save.save-page5-mobile {
+    color: #ffffff;
+    background: #E91E63;
+}
+
+.fa-users {
     display: none;
 }
-.filter.mobile .fa-users.active{
+
+.filter.mobile .fa-users.active {
     color: rgb(100, 149, 237);
     display: initial;
 }
+
 .filter.mobile .search-box {
     background-image: url("bg-search-box.jpg");
 }
@@ -568,7 +626,8 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
     background: rgba(100, 149, 237, 0.9);
     margin-bottom: 2rem;
 }
-.filter.mobile .search-box .container{
+
+.filter.mobile .search-box .container {
     padding: 1rem;
 }
 
@@ -586,12 +645,15 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
     border: none;
     margin-bottom: 1rem;
 }
-.mobile .pagination a{
+
+.mobile .pagination a {
     padding: 0.5rem 1rem;
 }
-.sotrang{
+
+.sotrang {
     text-align: center;
 }
+
 .pagination a {
     color: black;
     float: left;
@@ -605,10 +667,11 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
     color: white;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 
 /*HẾT CSS TRANG FILTER*/
-
 
 .mobile {
     display: none;
@@ -647,7 +710,8 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
     .sign-in {
         padding: 1rem 2rem;
     }
-    .promotion .col-sm-5{
+
+    .promotion .col-sm-5 {
         border: none;
     }
 }
@@ -661,19 +725,24 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile{
         color: white;
         text-align: center;
     }
+
     .first-menu.desktop {
         font-size: 1rem;
     }
-    .first-menu.desktop label{
+
+    .first-menu.desktop label {
         font-size: 2rem;
         padding: 1.2rem 0;
     }
-    .search-box.desktop{
+
+    .search-box.desktop {
         font-size: 1rem;
     }
+
     .filter.desktop .search-box p {
         font-size: 1rem;
     }
+
     .filter.desktop .search-box {
         font-size: 1rem;
     }

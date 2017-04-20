@@ -330,9 +330,9 @@ input.save-page:checked ~ label.save.save-page{
     margin: 0px;
 }
 .detail.desktop .search-box p {
-    background: #ffa80f;
+    font-weight: 600;
+    text-align: center;
     color: #ffffff;
-    display: inline-block;
     padding: 1rem 1rem 1rem;
     font-size: 1.6rem;
     margin-top: 1rem;

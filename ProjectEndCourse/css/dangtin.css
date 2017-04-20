@@ -1,6 +1,4 @@
-.background{
-    background-image: url("background.jpg");
-}* {
+* {
     box-sizing: border-box;
     margin: auto;
 
@@ -81,66 +79,6 @@ a:hover, a:focus {
     padding: 2rem;
 }
 
-.promotion {
-    text-align: justify;
-    background: #f2f2f2;
-    margin-top: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.promotion .row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.promotion .col-sm-5 {
-    border-right-style: ridge;
-}
-
-.promotion-benefit {
-    font-size: 1.7rem;
-}
-
-.promotion .fa {
-    padding-right: 1rem;
-    color: rgb(100, 149, 237);
-}
-
-.footer {
-    padding-top: 4rem;
-    text-align: justify;
-}
-
-.footer a {
-    text-transform: uppercase;
-    padding: 1rem;
-    font-weight: 600;
-    display: inline-block;
-}
-
-.footer .col-sm-2 label {
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: #337ab7;
-}
-
-.footer .col-sm-2 p {
-    padding: 1rem;
-    font-size: 1.5rem;
-}
-
-.backtotop {
-    position: fixed;
-    width: 5%;
-    bottom: 0px;
-    right: 3%;
-}
-
-.backtotop img {
-    width: 100%;
-}
-
 .modal-dialog {
     background: #d9edf7;
     text-align: center;
@@ -218,153 +156,116 @@ a:hover, a:focus {
     background: #00b242;
     font-weight: 600;
 }
+.backtotop {
+    position: fixed;
+    width: 5%;
+    bottom: 0px;
+    right: 3%;
+}
 
-/*CSS TRANG dangtin*/
+.backtotop img {
+    width: 100%;
+}
+
+/*CSS TRANG ĐĂNG TIN 2*/
+.first-menu.desktop .avatar img{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.first-menu.desktop .dropdown-menu{
+    left: -18px;
+}
+.first-menu.desktop .dropdown-menu a{
+    color: #333;
+}
+
+.first-menu.mobile .avatar img{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.first-menu.mobile .dropdown-menu{
+    left: -18px;
+}
+.first-menu.mobile .dropdown-menu a{
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.wrap-dangtin{
+    background: #F3F3F3; 
+    padding-bottom: 3rem;
+}
+.wrap-dangtin .title-header{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 .dangtin.desktop{
-    margin-top: 3rem;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #888888;
 }
-.dangtin.desktop .block-left{
-    width: 79%;
-    float: left;
-}
-.dangtin.desktop .content{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: justify;
-}
-.dangtin.desktop .content textarea{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-}
-.dangtin.desktop .content select{
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-}
-.dangtin.desktop .content p{
-    font-weight: 600;
-}
-.dangtin.desktop .content table{
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-
-.dangtin.mobile{
-    margin-top: 3rem;
-}
-.dangtin.mobile .block-left{
-    width: 79%;
-    float: left;
-}
-.dangtin.mobile .content{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: justify;
-}
-.dangtin.mobile .content textarea{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-}
-.dangtin.mobile .content select{
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-}
-.dangtin.mobile .content p{
-    font-weight: 600;
-}
-.dangtin.mobile .content table{
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-
-
-.dangtin.desktop .block-right{
-    width: 20%;
-    float: right;
-    background: rgb(100, 149, 237);
-    font-size: 1.3rem;
-}
-
-/*SEARCH TRANG dangtin*/
-
-.dangtin.desktop .search-box {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.dangtin.desktop .block-right .row{
-    margin: 0px;
-}
-.dangtin.desktop .search-box p {
-    background: #ffa80f;
-    color: #ffffff;
-    display: inline-block;
-    padding: 1rem 1rem 1rem;
-    font-size: 1.6rem;
+.dangtin.desktop .row{
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 1rem;
 }
-.dangtin.desktop .search-box select {
-    padding: 1rem 2rem;
+.dangtin.desktop .row textarea{
     width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.dangtin.desktop .row select{
+    padding: 0.4rem;
     margin-bottom: 1rem;
 }
-
-.dangtin.desktop .search-box button {
-    background: #ffa80f;
+.dangtin.desktop .row table{
     width: 100%;
-    padding: 1rem;
-    color: white;
-    border: none;
     margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
+.dangtin.desktop .row p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 .dangtin.mobile{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #888888;
 }
-.dangtin.mobile .search-box {
-    background-image: url("bg-search-box.jpg");
-}
+.dangtin.mobile .row{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 1rem;
 
-.dangtin.mobile .search-box p {
-    background: rgba(100, 149, 237, 0.9);
-    color: #ffffff;
-    display: inline-block;
-    padding: 1rem 1rem 1rem;
-    margin-bottom: 0px;
-    margin-top: 2rem;
-    font-size: 1.6rem;
 }
-
-.dangtin.mobile .search-box .row {
-    margin: 0px;
-    padding-top: 1rem;
-    background: rgba(100, 149, 237, 0.9);
-    margin-bottom: 2rem;
-}
-.dangtin.mobile .search-box .container{
-    padding: 1rem;
-}
-
-.dangtin.mobile .search-box select {
-    padding: 1rem 2rem;
+.dangtin.mobile .row textarea{
     width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.dangtin.mobile .row select{
+    padding: 0.4rem;
     margin-bottom: 1rem;
 }
-
-.dangtin.mobile .search-box button {
-    background: #ffa80f;
-    width: 100%;
-    padding: 1rem;
-    color: white;
-    border: none;
-    margin-bottom: 1rem;
+.dangtin.mobile .row p{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
-
-/*HẾT CSS TRANG dangtin*/
+/*HẾT CSS TRANG ĐĂNG TIN 2*/
 
 
 .mobile {
@@ -425,13 +326,10 @@ a:hover, a:focus {
         font-size: 2rem;
         padding: 1.2rem 0;
     }
-    .search-box.desktop{
+    .huongdan.desktop .search-box {
         font-size: 1rem;
     }
-    .dangtin.desktop .search-box p {
-        font-size: 1rem;
-    }
-    .dangtin.desktop .search-box {
+    .huongdan.desktop .search-box p {
         font-size: 1rem;
     }
 }

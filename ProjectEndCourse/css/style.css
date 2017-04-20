@@ -1,4 +1,3 @@
-}
 * {
     box-sizing: border-box;
     margin: auto;
@@ -31,9 +30,7 @@ a:hover, a:focus {
 .background{
     background-image: url("background.jpg");
 }
-.fa{
-    color: rgb(100, 149, 237);
-}
+
 .first-menu.desktop {
     text-align: center;
 }
@@ -150,7 +147,12 @@ a:hover, a:focus {
     border: none;
     margin-bottom: 1rem;
 }
-
+.fa{
+    color: rgb(100, 149, 237);
+}
+.fa-bars{
+    color: #fff;
+}
 .notice.desktop {
     padding: 15px 0px;
     background: #f2fcff;
