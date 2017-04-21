@@ -79,6 +79,66 @@ a:hover, a:focus {
     padding: 2rem;
 }
 
+.promotion {
+    text-align: justify;
+    background: #f2f2f2;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.promotion .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.promotion .col-sm-5 {
+    border-right-style: ridge;
+}
+
+.promotion-benefit {
+    font-size: 1.7rem;
+}
+
+.promotion .fa {
+    padding-right: 1rem;
+    color: rgb(100, 149, 237);
+}
+
+.footer {
+    padding-top: 4rem;
+    text-align: justify;
+}
+
+.footer a {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.footer .col-sm-2 label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #337ab7;
+}
+
+.footer .col-sm-2 p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.backtotop {
+    position: fixed;
+    width: 5%;
+    bottom: 0px;
+    right: 3%;
+}
+
+.backtotop img {
+    width: 100%;
+}
+
 .modal-dialog {
     background: #d9edf7;
     text-align: center;
@@ -156,18 +216,8 @@ a:hover, a:focus {
     background: #00b242;
     font-weight: 600;
 }
-.backtotop {
-    position: fixed;
-    width: 5%;
-    bottom: 0px;
-    right: 3%;
-}
 
-.backtotop img {
-    width: 100%;
-}
-
-/*CSS TRANG HƯỚNG DẪN */
+/*CSS TRANG HỒ SƠ*/
 .first-menu.desktop .avatar img{
     width: 60px;
     border-radius: 50%;
@@ -195,11 +245,12 @@ a:hover, a:focus {
     color: #fff;
 }
 
-.wrap-huongdan{
+.wrap-quanlydangtin{
     background: #F3F3F3; 
     padding-bottom: 3rem;
+    text-align: justify;
 }
-.wrap-huongdan .title-header{
+.wrap-quanlydangtin .title-header{
     text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
@@ -207,71 +258,82 @@ a:hover, a:focus {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-
-.huongdan.desktop{
+.wrap-quanlydangtin img{
+    width: 100%;
+}
+.quanlydangtin.desktop{
     max-width: 900px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 15px #888888;
 }
-.huongdan.desktop .row{
-    margin-left: 15px;
-    margin-right: 15px;
+.quanlydangtin.desktop .row{
     padding: 3rem;
-
+    border-bottom-style: inset;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.huongdan.desktop .row .title{
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 600;
-}
-.huongdan.desktop .row .vidu{
-    padding-bottom: 1rem;
-    padding-top: 3rem;
-    text-align: center;
-    border-bottom-style: groove;
-    max-width: 750px;
-}
-.huongdan.desktop .row .vidu p{
-    font-size: 2rem;
-    text-decoration: underline;
-    color: #009688;
+.quanlydangtin.desktop .row .row-header{
     margin-bottom: 2rem;
 }
+.quanlydangtin.desktop .row .col-sm-6{
+    padding-left: 0px;
+    padding-right: 3rem;
+}
+.quanlydangtin.desktop .row .col-sm-6 button{
+    color: #fff;
+    background: rgb(100, 149, 237);
+    padding: 0.5rem 2rem;
+}
+.quanlydangtin.desktop .row .row-header .title{
+    text-transform: uppercase;
+}
+.quanlydangtin.desktop .row .col-sm-6 span{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 3rem;
+}
 
-
-.huongdan.mobile{
+.quanlydangtin.mobile{
     max-width: 900px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 15px #888888;
-    text-align: justify;
 }
-.huongdan.mobile .row{
+.quanlydangtin.mobile .row{
+    padding: 1rem;
+    border-bottom-style: inset;
     margin-left: 15px;
     margin-right: 15px;
-    padding-top: 3rem;
-
 }
-.huongdan.mobile .row .title{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.huongdan.mobile .row .vidu{
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-    text-align: center;
-    border-bottom-style: groove;
-    max-width: 750px;
-}
-.huongdan.mobile .row .vidu p{
-    font-size: 1.5rem;
-    text-decoration: underline;
-    color: #009688;
+.quanlydangtin.mobile .row .row-header{
     margin-bottom: 2rem;
 }
-/*HẾT CSS TRANG HƯỚNG DẪN 2*/
+.quanlydangtin.mobile .row .col-sm-6{
+    padding-left: 0px;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+}
+.quanlydangtin.mobile .row .col-sm-6 button{
+    color: #fff;
+    background: rgb(100, 149, 237);
+    padding: 0.5rem 2rem;
+}
+.quanlydangtin.mobile .row .row-header .title{
+    text-transform: uppercase;
+}
+.quanlydangtin.mobile .row .col-sm-6 span{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 3rem;
+}
+.accepted span{
+    background: #50e516;
+}
+.pending span{
+    background: #ffeb3b;
+}
+/*HẾT CSS TRANG HỒ SƠ*/
 
 
 .mobile {
@@ -314,7 +376,7 @@ a:hover, a:focus {
     .promotion .col-sm-5{
         border: none;
     }
-    .wrap-huongdan .title-header {
+    .wrap-quanlydangtin .title-header{
         font-size: 2rem;
     }
 }
