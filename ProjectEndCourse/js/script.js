@@ -10,5 +10,6 @@ var passInput=$('#password-signup').attr('type');
 
 $('.taotaikhoan').on('click', function(){
 	$('#sign-in').modal('hide');
-	$('#sign-up').modal('show');
+	setTimeout(function(){
+		$('#sign-up').modal('show');}, 500);	
 });
