@@ -84,7 +84,28 @@ a:hover, a:focus {
     text-align: center;
     width: 30%;
 }
+.footer {
+    padding-top: 4rem;
+    text-align: justify;
+}
 
+.footer a {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.footer .col-sm-2 label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #337ab7;
+}
+
+.footer .col-sm-2 p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
 .sign-up {
     padding: 3rem 6rem;
 }
@@ -340,5 +361,8 @@ a:hover, a:focus {
     }
     .huongdan.desktop .search-box p {
         font-size: 1rem;
+    }
+    .modal-dialog {
+        width: 50%;
     }
 }

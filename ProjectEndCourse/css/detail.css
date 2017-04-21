@@ -529,4 +529,7 @@ input.save-page-mobile:checked ~ label.save.save-page-mobile{
     .dangtin.desktop .search-box {
         font-size: 1rem;
     }
+    .modal-dialog {
+        width: 50%;
+    }
 }

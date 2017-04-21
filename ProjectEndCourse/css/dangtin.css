@@ -78,7 +78,28 @@ a:hover, a:focus {
     margin-bottom: 0px;
     padding: 2rem;
 }
+.footer {
+    padding-top: 4rem;
+    text-align: justify;
+}
 
+.footer a {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.footer .col-sm-2 label {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #337ab7;
+}
+
+.footer .col-sm-2 p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
 .modal-dialog {
     background: #d9edf7;
     text-align: center;
@@ -331,5 +352,8 @@ a:hover, a:focus {
     }
     .huongdan.desktop .search-box p {
         font-size: 1rem;
+    }
+    .modal-dialog {
+        width: 50%;
     }
 }

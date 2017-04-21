@@ -446,4 +446,7 @@ a:hover, a:focus {
     .dangtin.desktop .search-box {
         font-size: 1rem;
     }
+    .modal-dialog {
+        width: 50%;
+    }
 }
