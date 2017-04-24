@@ -368,12 +368,11 @@ a:hover, a:focus {
 .filter.desktop .block-left .save {
     margin-bottom: 0px;
     padding: 0.7rem;
-    border-radius: 5px;
     background: #dddddd;
 }
 
 .filter.desktop .block-left .save.active {
-    background: rgb(100, 149, 237);
+    background: #4CAF50;
     color: #ffffff;
 }
 
@@ -550,13 +549,12 @@ input.save-page5:checked ~ label.save.save-page5 {
     margin-top: 1rem;
     margin-bottom: 0px;
     padding: 0.7rem;
-    border-radius: 5px;
     background: #dddddd;
-    width: 48%;
+    display: block;
 }
 
 .filter.mobile .save.active {
-    background: rgb(100, 149, 237);
+    background: #4CAF50;
     color: #ffffff;
 }
 

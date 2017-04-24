@@ -289,7 +289,6 @@ a:hover, a:focus {
 .detail.desktop .save{
     margin-bottom: 0px;
     padding: 0.7rem;
-    border-radius: 5px;
     background: #dddddd;
 }
 .save-page{
@@ -443,7 +442,6 @@ input.save-page:checked ~ label.save.save-page{
 .detail.mobile .save{
     margin-bottom: 0px;
     padding: 0.7rem;
-    border-radius: 5px;
     background: #dddddd;
 }
 .fa-users{
