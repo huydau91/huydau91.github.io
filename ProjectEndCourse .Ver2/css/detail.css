@@ -299,6 +299,19 @@ input.save-page:checked ~ label.save.save-page{
     color: #ffffff;
     background: #E91E63;
 }
+input#thuechung-desktop{
+    display: none;
+}
+label.thuechung-desktop{
+    padding: 0.3rem 2rem;
+    margin: 0px;
+    margin-left: 2rem;
+    background: rgba(158, 158, 158, 0.69);
+}
+input#thuechung-desktop:checked ~ label.thuechung-desktop{
+    color: #ffffff;
+    background: #E91E63;
+}
 .detail.desktop .block-left .row.content .fa{
     font-size: initial;
 }
@@ -381,6 +394,13 @@ input.save-page:checked ~ label.save.save-page{
     border: none;
     margin-bottom: 1rem;
 }
+.detail.desktop .form-group button{
+    padding: 0.3rem 2rem;
+    border: none;
+    color: #fff;
+    background: rgb(100, 149, 237);
+    margin-top: 1rem;
+}
 
 
 .detail.mobile .row{
@@ -415,7 +435,19 @@ input.save-page:checked ~ label.save.save-page{
     color: #E91E63;
     font-weight: 600;
 }
-
+input#thuechung-mobile{
+    display: none;
+}
+label.thuechung-mobile{
+    padding: 0.3rem 2rem;
+    margin: 0px;
+    margin-left: 2rem;
+    background: rgba(158, 158, 158, 0.69);
+}
+input#thuechung-mobile:checked ~ label.thuechung-mobile{
+    color: #ffffff;
+    background: #E91E63;
+}
 .detail.mobile .search-box {
     background-image: url("bg-search-box.jpg");
 }
@@ -508,6 +540,13 @@ input.save-page-mobile:checked ~ label.save.save-page-mobile{
   animation-name: fade;
   animation-duration: 1.5s;
   opacity: 1;
+}
+.detail.mobile .form-group button{
+    padding: 0.3rem 2rem;
+    border: none;
+    color: #fff;
+    background: rgb(100, 149, 237);
+    margin-top: 1rem;
 }
 /*HẾT CSS TRANG detail*/
 

@@ -15,12 +15,25 @@ $('.taotaikhoan').on('click', function(){
 });
 
 var i=13;
-$('button.themtienich').on('click', function(){
-	if ($('input.themtienich').val() == '') {
+$('button.themtienich-desktop').on('click', function(){
+	if ($('input.themtienich-desktop').val() == '') {
 		return;
 	}
 	else{
-		$('.tienich').append('<tr><td><input type="checkbox" id="tienich' + i +'"><label for="tienich' + i + '">' + '&nbsp' + $('input.themtienich').val() + ' </label></td></tr>')
+		$('.tienich-desktop').append('<div class="col-sm-3">' + 
+                    '<input type="checkbox" id="tienich' + i +'">' +
+                    '<label for="tienich' + i +'">' + '&nbsp' + $('input.themtienich-desktop').val() + '</label></div>')
+	i++;
+	return i;
+	}
+});
+
+$('button.themtienich-mobile').on('click', function(){
+	if ($('input.themtienich-mobile').val() == '') {
+		return;
+	}
+	else{
+		$('.tienich-mobile').append('<div class="col-xs-6"><input type="checkbox" id="tienich' + i + '-mobi"><label for="tienich' + i + '-mobi">' + '&nbsp' + $('input.themtienich-mobile').val() + '</label></div>')
 	i++;
 	return i;
 	}

@@ -75,7 +75,8 @@
             <div class="row" style="padding-top: 3rem;">
                 <p>Tiêu đề tin:</p>
                 <textarea rows="2" required="required"
-                          placeholder="Nhập tiêu đề (VD: nhà tôi cho thuê phòng trọ (cc mini) tại số 131a, ngõ 105/20 đường doãn kế thiện, mai dịch, quận cầu giấy)"></textarea>
+                          placeholder="Nhập tiêu đề (VD: nhà tôi cho thuê phòng trọ (cc mini) tại số 131a, ngõ 105/20 đường doãn kế thiện, mai dịch, quận cầu giấy)">
+                </textarea>
             </div>
 
             <div class="row">
@@ -136,90 +137,87 @@
                         <option>Tất cả</option>
                     </select>
                 </div>
+
+                <div class="col-sm-4">
+                    <p>Trạng thái phòng:</p>
+                    <select>
+                        <option>-- Chọn --</option>
+                        <option>Phòng trống</option>
+                        <option>Share phòng</option>
+                        <option>Đã cho thuê</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="row" style="padding-bottom: 3rem;">
+            <div class="row tienich-desktop">
                 <p>Tiện ích:</p>
 
-                <table class="tienich">
-                    <tr>
-                        <td>
-                            <input type="checkbox" id="tienich1">
-                            <label for="tienich1">Chỗ để xe</label>
-                        </td>
-                        <td>
+                <div class="col-sm-3">
+                    <input type="checkbox" id="tienich1">
+                    <label for="tienich1">Chỗ để xe</label>
+                </div>
+
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich2">
                             <label for="tienich2">Điều hòa</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich3">
                             <label for="tienich3">Nóng lạnh</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich4">
                             <label for="tienich4">Bảo vệ</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                </div>
+ 
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich5">
                             <label for="tienich5">Khép kín</label>
-                        </td>
-
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich6">
                             <label for="tienich6">Ban công</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich7">
                             <label for="tienich7">Ti vi</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich8">
                             <label for="tienich8">Tủ lạnh</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich9">
                             <label for="tienich9">Giường</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich10">
                             <label for="tienich10">Tủ</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich11">
                             <label for="tienich11">Bàn</label>
-                        </td>
-                        <td>
+                </div>
+                <div class="col-sm-3">
                             <input type="checkbox" id="tienich12">
                             <label for="tienich12">Ghế</label>
-                        </td>
-                    </tr>
-                </table>
-
-                <table>
-                    <tr>
-                        <td>
-                            <label>Thêm tiện ích: </label>
-                            <input type="text" class="themtienich">
-                            <button class="themtienich">Thêm</button>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>
-                            <label>Thêm ảnh: </label>
-                            <button>Tải ảnh</button>
-                        </td>
-                    </tr>
-                </table>
-
-                <p>Thông tin chi tiết:</p>
-                <textarea rows="10"></textarea>
-                <button>Đăng tin</button>
+                </div>    
+            </div>
+            <div class="row" style="padding-bottom: 3rem;">
+                <div style="margin-bottom: 1rem;">
+                    <label>Thêm tiện ích: </label>
+                    <input type="text" class="themtienich-desktop">
+                    <button class="themtienich-desktop">Thêm</button>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label>Thêm ảnh: </label>
+                    <button>Tải ảnh</button>
+                </div>
+                <div>
+                    <p>Thông tin chi tiết:</p>
+                    <textarea rows="10"></textarea>
+                    <button>Đăng tin</button>
+                </div>
             </div>
         </div>
         <!-- HẾT ĐĂNG TIN-DESKTOP -->
@@ -290,9 +288,19 @@
                         <option>Tất cả</option>
                     </select>
                 </div>
+
+                <div class="col-sm-4">
+                    <p>Trạng thái phòng:</p>
+                    <select>
+                        <option>-- Chọn --</option>
+                        <option>Phòng trống</option>
+                        <option>Share phòng</option>
+                        <option>Đã cho thuê</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="row" style="padding-bottom: 3rem;">
+            <div class="row tienich-mobile" style="padding-bottom: 3rem;">
                 <p>Tiện ích:</p>
                 <div class="col-xs-6">
                     <input type="checkbox" id="tienich1-mobi">
@@ -331,10 +339,13 @@
                 <div class="col-xs-6">
                     <input type="checkbox" id="tienich12-mobi">
                     <label for="tienich12-mobi">Ghế</label></div>
+            </div>
+
+            <div class="row">
                 <div class="col-xs-12">
                     <label>Thêm tiện ích: </label>
-                    <input type="text">
-                    <button>Thêm</button>
+                    <input type="text" class="themtienich-mobile">
+                    <button class="themtienich-mobile">Thêm</button>
                 </div>
                 <div class="col-xs-12">
                     <p>Thông tin chi tiết:</p>
