@@ -596,7 +596,9 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile {
 .block-left .fa-users {
     display: none;
 }
-
+.mobile .fa-users{
+    display: none;
+}
 .filter.mobile .fa-users.active {
     color: rgb(100, 149, 237);
     display: initial;

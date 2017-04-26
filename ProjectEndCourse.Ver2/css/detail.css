@@ -510,6 +510,9 @@ input#thuechung-mobile:checked ~ label.thuechung-mobile{
 .block-left .fa-users{
     display: none;
 }
+.mobile .fa-users{
+    display: none;
+}
 .fa-users.active{
     display: initial;
 }
