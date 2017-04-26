@@ -507,7 +507,7 @@ input#thuechung-mobile:checked ~ label.thuechung-mobile{
     padding: 0.7rem;
     background: #dddddd;
 }
-.fa-users{
+.block-left .fa-users{
     display: none;
 }
 .fa-users.active{

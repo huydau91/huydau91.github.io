@@ -593,7 +593,7 @@ input.save-page5-mobile:checked ~ label.save.save-page5-mobile {
     background: #E91E63;
 }
 
-.fa-users {
+.block-left .fa-users {
     display: none;
 }
 
