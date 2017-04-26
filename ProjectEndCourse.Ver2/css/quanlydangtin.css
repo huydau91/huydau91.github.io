@@ -279,8 +279,8 @@ a, a:hover, a:focus, button:focus {
 }
 .quanlydangtin.desktop .row .col-sm-6 button{
     color: #fff;
-    background: rgb(100, 149, 237);
-    padding: 0.5rem 2rem;
+    background: #00b242;
+    padding: 0.6rem 2rem;
 }
 .quanlydangtin.desktop .row .row-header .title{
     text-transform: uppercase;
@@ -289,6 +289,24 @@ a, a:hover, a:focus, button:focus {
     text-transform: uppercase;
     font-weight: 600;
     padding: 0 3rem;
+}
+.quanlydangtin.desktop .status {
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+    display: none;
+}
+
+.quanlydangtin.desktop .status.active {
+    background: rgb(100, 149, 237);
+    color: #ffffff;
+    display: inline-block;
+}
+
+.quanlydangtin.desktop .status.closed.active {
+    background: #E91E63;
+    color: #ffffff;
 }
 
 .quanlydangtin.mobile{
@@ -313,8 +331,8 @@ a, a:hover, a:focus, button:focus {
 }
 .quanlydangtin.mobile .row .col-sm-6 button{
     color: #fff;
-    background: rgb(100, 149, 237);
-    padding: 0.5rem 2rem;
+    background: #00b242;
+    padding: 0.6rem 2rem;
 }
 .quanlydangtin.mobile .row .row-header .title{
     text-transform: uppercase;
@@ -329,6 +347,24 @@ a, a:hover, a:focus, button:focus {
 }
 .pending span{
     background: #ffeb3b;
+}
+.quanlydangtin.mobile .status {
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: #dddddd;
+    display: none;
+}
+
+.quanlydangtin.mobile .status.active {
+    background: rgb(100, 149, 237);
+    color: #ffffff;
+    display: inline-block;
+}
+
+.quanlydangtin.mobile .status.closed.active {
+    background: #E91E63;
+    color: #ffffff;
 }
 /*HẾT CSS TRANG HỒ SƠ*/
 
