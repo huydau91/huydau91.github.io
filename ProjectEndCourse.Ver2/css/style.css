@@ -208,7 +208,10 @@ a, a:hover, a:focus, button:focus {
     padding: 1rem;
     background: rgba(158, 158, 158, 0.34);
 }
-
+.container.featured-cities.desktop .col-sm-4:hover{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.7;
+}
 .container.featured-cities.mobile {
     margin-top: 2rem;
     margin-bottom: 2rem;
