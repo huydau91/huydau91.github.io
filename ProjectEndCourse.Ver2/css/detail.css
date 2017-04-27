@@ -551,6 +551,27 @@ input.save-page-mobile:checked ~ label.save.save-page-mobile{
     background: rgb(100, 149, 237);
     margin-top: 1rem;
 }
+.quenmk-form{
+    padding: 6rem 5rem;
+}
+.quenmk-form p{
+    font-size: 2rem;
+}
+.quenmk-form input{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+}
+.quenmk-form button{
+    width: 50%;
+    color: white;
+    background: #00b242;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
 /*HẾT CSS TRANG detail*/
 
 
