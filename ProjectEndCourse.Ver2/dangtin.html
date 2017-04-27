@@ -156,50 +156,50 @@
                 </div>
 
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich2">
-                            <label for="tienich2">Điều hòa</label>
+                    <input type="checkbox" id="tienich2">
+                    <label for="tienich2">Điều hòa</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich3">
-                            <label for="tienich3">Nóng lạnh</label>
+                    <input type="checkbox" id="tienich3">
+                    <label for="tienich3">Nóng lạnh</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich4">
-                            <label for="tienich4">Bảo vệ</label>
+                    <input type="checkbox" id="tienich4">
+                    <label for="tienich4">Bảo vệ</label>
                 </div>
- 
+
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich5">
-                            <label for="tienich5">Khép kín</label>
-                </div>
-                <div class="col-sm-3">
-                            <input type="checkbox" id="tienich6">
-                            <label for="tienich6">Ban công</label>
+                    <input type="checkbox" id="tienich5">
+                    <label for="tienich5">Khép kín</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich7">
-                            <label for="tienich7">Ti vi</label>
+                    <input type="checkbox" id="tienich6">
+                    <label for="tienich6">Ban công</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich8">
-                            <label for="tienich8">Tủ lạnh</label>
+                    <input type="checkbox" id="tienich7">
+                    <label for="tienich7">Ti vi</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich9">
-                            <label for="tienich9">Giường</label>
+                    <input type="checkbox" id="tienich8">
+                    <label for="tienich8">Tủ lạnh</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich10">
-                            <label for="tienich10">Tủ</label>
+                    <input type="checkbox" id="tienich9">
+                    <label for="tienich9">Giường</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich11">
-                            <label for="tienich11">Bàn</label>
+                    <input type="checkbox" id="tienich10">
+                    <label for="tienich10">Tủ</label>
                 </div>
                 <div class="col-sm-3">
-                            <input type="checkbox" id="tienich12">
-                            <label for="tienich12">Ghế</label>
-                </div>    
+                    <input type="checkbox" id="tienich11">
+                    <label for="tienich11">Bàn</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" id="tienich12">
+                    <label for="tienich12">Ghế</label>
+                </div>
             </div>
             <div class="row" style="padding-bottom: 3rem;">
                 <div style="margin-bottom: 1rem;">
@@ -209,7 +209,9 @@
                 </div>
                 <div style="margin-bottom: 1rem;">
                     <label>Thêm ảnh: </label>
-                    <button>Tải ảnh</button>
+                    <button id="taianh-desktop">Tải ảnh</button>
+                    <input type="file" id="fileInput-desktop">
+                    <div class="row" id="fileDisplayArea-desktop"></div>
                 </div>
                 <div>
                     <p>Thông tin chi tiết:</p>
@@ -347,7 +349,9 @@
                 </div>
                 <div style="margin-bottom: 1rem;">
                     <label>Thêm ảnh: </label>
-                    <button>Tải ảnh</button>
+                    <button id="taianh-mobile">Tải ảnh</button>
+                    <input type="file" id="fileInput-mobile">
+                    <div class="row" id="fileDisplayArea-mobile"></div>
                 </div>
                 <div>
                     <p>Thông tin chi tiết:</p>
@@ -402,6 +406,6 @@
 
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/dangtin.js"></script>
 </body>
 </html>

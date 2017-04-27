@@ -14,6 +14,12 @@ $('.taotaikhoan').on('click', function(){
 		$('#sign-up').modal('show');}, 400);	
 });
 
+$('.quenmk').on('click', function(){
+	$('#sign-in').modal('hide');
+	setTimeout(function(){
+		$('#quenmk').modal('show');}, 400);	
+});
+
 var i=13;
 $('button.themtienich-desktop').on('click', function(){
 	if ($('input.themtienich-desktop').val() == '') {

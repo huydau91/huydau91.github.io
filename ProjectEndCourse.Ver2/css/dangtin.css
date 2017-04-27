@@ -263,6 +263,12 @@ a, a:hover, a:focus, button:focus {
     color: #fff;
     background: rgb(100, 149, 237);
 }
+#fileInput-desktop{
+    display: none;
+}
+#fileInput-mobile{
+    display: none;
+}
 
 .dangtin.mobile{
     background: #fff;
@@ -307,6 +313,20 @@ input.themtienich-desktop{
 input.themtienich-mobile{
     padding: 0.3rem 0.5rem;
     width: 14rem;
+}
+#fileDisplayArea-desktop{
+    margin-top: 1rem;
+}
+#fileDisplayArea-desktop img{
+    width: 30%;
+    padding: 1rem;
+}
+#fileDisplayArea-mobile{
+    margin-top: 1rem;
+}
+#fileDisplayArea-mobile img{
+    width: 30%;
+    padding: 1rem;
 }
 /*HẾT CSS TRANG ĐĂNG TIN 2*/
 

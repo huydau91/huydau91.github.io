@@ -101,9 +101,9 @@
         </div>
         <div class="row thumb">
             <div class="col-sm-7">
-                   <img src="detail/page4/1.jpg" class="item" onclick="currentSlide(1)">
-                   <img src="detail/page4/2.jpg" class="item" onclick="currentSlide(2)">
-                   <img src="detail/page4/3.jpg" class="item" onclick="currentSlide(3)">
+                <img src="detail/page4/1.jpg" class="item" onclick="currentSlide(1)">
+                <img src="detail/page4/2.jpg" class="item" onclick="currentSlide(2)">
+                <img src="detail/page4/3.jpg" class="item" onclick="currentSlide(3)">
             </div>
         </div>
 
@@ -158,11 +158,41 @@
 
             <div id="binhluan">
                 <p class="title">Bình luận</p>
+                <div class="media">
+                    <div class="media-left media-top">
+                        <img src="img/avatar.jpg" class="media-object" style="width:4em; height: 4em;">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Phan Vũ
+                            <small><i>Posted on April 14, 2017</i></small>
+                        </h4>
+                        <p>Chủ nhà rất vui, phòng đẹp</p>
+                        <div class="album-user">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="detail/page1/1.jpg" class="img-responsive">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="detail/page1/2.jpg" class="img-responsive">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="detail/page1/3.jpg" class="img-responsive">
+                                </div>
+
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="detail/page1/4.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="form-group">
                 <textarea class="form-control" rows="5" id="comment"></textarea>
-                <button>Bình luận</button>
+                <button>Comment</button>
             </div>
         </div>
     </div>
@@ -425,11 +455,41 @@
 
     <p class="title">Bình luận</p>
     <div class="binhluan active">
+        <div class="media">
+            <div class="media-left media-top">
+                <img src="img/avatar.jpg" class="media-object" style="width:4em; height: 4em;">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Phan Vũ
+                    <small><i>Posted on April 14, 2017</i></small>
+                </h4>
+                <p>Chủ nhà rất vui, phòng đẹp</p>
+                <div class="album-user">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="detail/page1/1.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="detail/page1/2.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="detail/page1/3.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-6">
+                            <img src="detail/page1/4.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="form-group">
         <textarea class="form-control" rows="5" id="comment"></textarea>
-        <button>Bình luận</button>
+        <button>Comment</button>
     </div>
 
     <div class="search-box">
@@ -620,7 +680,8 @@
                 </p>
                 <p><i class="fa fa-envelope"></i>Tự động tìm kiếm bất động sản cho thuê phù hợp nhất với yêu cầu của bạn
                     và gửi về <strong>Email</strong> của bạn hàng ngày.</p>
-                <p><i class="fa fa-book"></i> <strong>Phongtro.com</strong> hoàn toàn miễn phí và dễ sử dụng.</p>
+                <p><i class="fa fa-book"></i> <strong>Phongtro.com</strong> hoàn toàn miễn phí và dễ
+                    sử dụng.</p>
             </div>
         </div>
     </div>
@@ -730,7 +791,7 @@
                 </div>
 
                 <div style="text-align: left;">
-                    <input class="checkbox" id="nho-mk" type="checkbox">
+                    <input class="nho-mk" id="nho-mk" type="checkbox">
                     <label for="nho-mk">Ghi nhớ mật khẩu</label>
                 </div>
                 <div>
@@ -738,6 +799,7 @@
                 </div>
             </form>
             <p>Bạn chưa có tài khoản? <a href="#" class="taotaikhoan">Tạo tài khoản</a></p>
+            <a href="#"><i class="fa fa-exclamation-circle"></i> Quên mật khẩu?</a>
         </div>
     </div>
 </div>
