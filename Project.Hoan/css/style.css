@@ -1,0 +1,90 @@
+*{
+	margin: auto;
+	box-sizing: border-box;
+}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+	color: #323232;
+}
+.container{
+	padding: 0px;
+}
+.first-menu{
+	margin-top: 1rem;
+}
+.first-menu img{
+	width: 80%;
+}
+.first-menu a{
+	font-size: 2rem;
+	padding: 1.5rem;
+	display: inline-block;
+}
+
+.second-menu{
+	margin-top: 2rem;
+	padding-bottom: 2rem;
+	border-bottom-style: inset;
+}
+.second-menu .col-sm-9 form{
+	display: flex;
+}
+.second-menu .col-sm-9 input{
+	width: 100%;
+	padding: 0.5rem 1rem;
+}
+
+.content{
+	margin-top: 2rem;
+	margin-bottom: 10rem;
+}
+.content .block-left{
+	width: 20%;
+	float: left;
+}
+.content .block-left a{
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.content .block-right{
+	width: 80%;
+	float: left;
+}
+.content .block-right img{
+	max-width: 225px;
+	max-height: 225px;
+}
+.content .block-right .col-sm-4{
+	height: 160px;
+	margin-bottom: 1rem;
+}
+
+.footer{
+	text-align: center;
+}
+.footer .title{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.footer .container{
+	padding-top: 5rem;
+    padding-bottom: 8rem;
+    border-top-style: outset;
+}
+.footer a{
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.backtotop {
+    position: fixed;
+    width: 5%;
+    bottom: 0px;
+    right: 3%;
+}
+
+.backtotop img {
+    width: 100%;
+}
