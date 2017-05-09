@@ -39,27 +39,53 @@ a, a:hover, a:focus{
 	margin-top: 2rem;
 	margin-bottom: 10rem;
 }
-.content .block-left{
-	width: 20%;
-	float: left;
+
+.content .col-sm-3{
+	margin-bottom: 3rem;
+	height: 300px;
+	text-align: center;
+	padding: 0px;
 }
-.content .block-left a{
-	display: block;
-	margin-bottom: 1rem;
+.content .col-sm-3 img{
+	display: flex;
+}
+.content .title{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-left: 15px;
+}
+.content .phaotrangtri, .content .bogiay{
+	margin-bottom: 5rem;
+	border-bottom-style: double;
+}
+.content .code{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.content .price{
+	font-weight: 600;
+	font-size: 2rem;
+}
+.content .save span{
+	padding: 2rem;
+	background: aliceblue;
+	display: inline-block;
+}
+.content .save{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.content .price{
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 25%;
 }
 
-.content .block-right{
-	width: 80%;
-	float: left;
-}
-.content .block-right img{
-	max-width: 225px;
-	max-height: 225px;
-}
-.content .block-right .col-sm-4{
-	height: 160px;
-	margin-bottom: 1rem;
-}
 
 .footer{
 	text-align: center;
@@ -70,8 +96,8 @@ a, a:hover, a:focus{
 }
 .footer .container{
 	padding-top: 5rem;
-    padding-bottom: 8rem;
-    border-top-style: outset;
+	padding-bottom: 8rem;
+	border-top-style: outset;
 }
 .footer a{
 	display: block;
@@ -79,12 +105,12 @@ a, a:hover, a:focus{
 }
 
 .backtotop {
-    position: fixed;
-    width: 5%;
-    bottom: 0px;
-    right: 3%;
+	position: fixed;
+	width: 5%;
+	bottom: 0px;
+	right: 3%;
 }
 
 .backtotop img {
-    width: 100%;
+	width: 100%;
 }
