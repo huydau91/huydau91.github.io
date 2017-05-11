@@ -13,7 +13,6 @@ body{
 	height: calc(1.5rem + 20px);
 }
 
-.collection-item .bagde {
-	margin-right: -10px;
-	padding-right: 0;
+.span.bagde{
+	cursor: pointer;
 }
