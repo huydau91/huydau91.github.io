@@ -1,0 +1,480 @@
+* {
+	box-sizing: border-box;
+	margin: auto;
+}
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('../fonts/roboto-regular/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular/roboto-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotomedium';
+	src: url('../fonts/roboto-medium/roboto-medium.woff2') format('woff2'), url('../fonts/roboto-medium/roboto-medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sanssemibold';
+	src: url('../fonts/opensans-semibold/opensans-semibold-webfont.woff2') format('woff2'), url('../fonts/opensans-semibold/opensans-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_sans_proregular';
+	src: url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-regular/sourcesanspro-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'robotolight';
+	src: url('../fonts/roboto-light/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light/roboto-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.header .top {
+	height: 100px;
+	position: relative;
+	background-color: rgb(33,31,34);
+}
+
+.header .top .item1 {
+	position: absolute;
+	left: 95px;
+	top: 20px;
+}
+
+.header .top .item2 {
+	position: absolute;
+	left: 350px;
+	top: 30px;
+}
+
+.header .top .item2 input {
+	width: 470px;
+	height: 40px;
+	padding-left: 20px;
+	font-family: "robotoregular";
+	font-size: 14px;
+}
+
+.header .top .item2 img {
+	position: absolute;
+	top: 0;
+	left: 455px;
+	cursor: pointer;
+}
+
+.header .top .item3 {
+	position: absolute;
+	left: 1015px;
+	top: 30px;
+}
+
+.header .top .item3 a {
+	color: #fff;
+	font-family: "robotomedium";
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.header .top .item3 span {
+	color: #fff;
+	font-family: "robotomedium";
+	font-size: 15px;
+	margin: 0 10px;
+}
+
+.header .top .item3 img {
+	margin-left: 30px;
+	cursor: pointer;
+}
+.header .body {
+	background-color: rgb(236,236,236);
+}
+.header .body .menu {
+	margin: 0 95px;
+}
+.header .body .menu a {
+	font-family: "robotomedium";
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 13px 0 13px 0;
+	display: inline-block;
+	color: black;
+}
+
+.header .body .menu span {
+	padding: 0 21px;
+	font-family: "robotomedium";
+	font-size: 18px;
+	display: inline-block;
+}
+
+.header .sidebar {
+    /*width: 35px;
+    height: 620px;
+    background-color: rgb(0,0,0);*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.bigbanner img {
+	width: 100%;
+	height: 650px;
+}
+
+.commitment {
+	padding: 30px 95px 40px;
+	background-color: rgb(236,236,236);
+}
+
+.commitment .item {
+	box-shadow: 6px 5px 10px rgba(136, 136, 136, 0.39);
+}
+.commitment .center {
+	margin: 0 15px;
+}
+
+.catalogue {
+	padding: 70px 95px;
+	background-image: url("../img/catalog/bg.jpg");
+}
+
+.catalogue .row1 {
+	margin-bottom: 40px;
+}
+
+.catalogue .row1 .center, .catalogue .row2 .center {
+	padding: 0 35px;
+}
+
+.combo .menu {
+	padding: 13px 95px 13px;
+	background-color: rgb(236,236,236);
+}
+
+.combo .menu span:nth-child(1) {
+	text-transform: uppercase;
+	color: #fb0303;
+	font-family: "open_sanssemibold";
+	font-size: 38px;
+}
+
+.combo .menu span:nth-child(2) {
+	font-family: "source_sans_proregular";
+	font-size: 25px;
+}
+
+.combo .menu span {
+	font-family: "robotoregular";
+	font-size: 14px;
+}
+
+.combo .menu span:nth-child(3) {
+	margin-left: 470px;
+}
+
+.combo .menu span:nth-child(2n + 1) {
+	cursor: pointer;
+}
+
+.combo .content {
+	height: 280px;
+	background-color: #fff;
+	margin: 80px 95px 40px;
+	text-align: center;
+}
+
+.combo .content .col-sm-2 p:nth-child(2) {
+	font-family: "robotoregular";
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.combo .content .col-sm-2 p:nth-child(3) {
+	font-family: "robotoregular";
+	font-size: 18px;
+	color: #fe0036;
+}
+
+.combo .content .col-sm-1 p {
+	font-size: 50px;
+	position: absolute;
+	top: 50px;
+}
+
+.combo .content .col-sm-3 {
+	text-align: left;
+}
+
+.combo .content .col-sm-3 p:nth-child(1) {
+	font-family: "open_sanssemibold";
+	font-size: 30px;
+}
+
+.combo .content .col-sm-3 p:nth-child(3) {
+	font-family: "Roboto";
+	font-size: 25px;
+	color: #fe0036;
+	font-weight: bold;
+}
+
+.hotdeal {
+	padding: 10px 0 40px;
+	background-color: rgb(236,236,236);
+}
+.hotdeal .content {
+	margin: 0 95px;
+	text-align: center;
+}
+.hotdeal .content p:nth-child(1) {
+	font-family: "Roboto";
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #fe0036;
+	font-weight: bold;
+	text-align: left;
+}
+.hotdeal .content .row1 {
+	display: flex;
+}
+.hotdeal .content .item {
+	background-color: #fff;
+}
+.hotdeal .content .item p:nth-child(2) {
+	font-family: "robotoregular";
+	font-size: 18px;
+	margin: 20px 0 0;
+}
+
+.hotdeal .content .item p:nth-child(3) {
+	font-family: "robotoregular";
+	font-size: 18px;
+	color: #fe0036;
+}
+
+.hotdeal .content .item p:nth-child(3) > span {
+	font-family: "robotoregular";
+	font-size: 15px;
+	color: #828282;
+}
+.hotdeal .content .item p:nth-child(4) {
+	display: inline-block;
+	padding: 0.5rem 2rem;
+	border: 1px solid red;
+}
+.banner2 img{
+	width: 100%;
+}
+.collection1 {
+	height: 1355px;
+}
+.collection1 .banner {
+	position: relative;
+}
+.collection1 .banner img {
+	width: 100%;
+}
+.collection1 .banner p:nth-child(2) {
+	position: absolute;
+	top: 32%;
+	left: 95px;
+	font-size: 35px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.collection1 .banner p:nth-child(3) {
+	position: absolute;
+	top: 45%;
+	padding: 1rem 5rem;
+	left: 125px;
+	font-size: 25px;
+	color: #fff;
+	background: rgb(102,102,104);
+	border-radius: 5px;
+}
+.collection1 .content {
+	position: relative;
+}
+.collection1 .content .row1 {
+	position: absolute;
+	left: 95px;
+	top: -105px;
+	right: 95px;
+}
+.collection1 .content .row1 .col-sm-3 {
+	padding: 0;
+	text-align: center;
+}
+.collection1 .content .row1 .col-sm-3 p:nth-child(2) {
+	margin: 15px 0 0;
+	font-size: 16px;
+}
+.collection1 .content .row1 .col-sm-3 p:nth-child(3) {
+	font-size: 18px;
+	color: #fe0036;
+}
+.collection1 .content .row1 .col-sm-3.center {
+	padding: 0 5px;
+}
+.collection1 .content .row2 {
+	position: absolute;
+	left: 95px;
+	top: 375px;
+	right: 95px;
+}
+
+.collection1 .content .row2 .col-sm-3 {
+	padding: 0;
+	text-align: center;
+}
+
+.collection1 .content .row2 .col-sm-3 p:nth-child(2) {
+	margin: 15px 0 0;
+	font-size: 16px;
+}
+
+.collection1 .content .row2 .col-sm-3 p:nth-child(3) {
+	font-size: 18px;
+	color: #fe0036;
+}
+
+.collection1 .content .row1 .col-sm-3.center {
+	padding: 0 5px;
+}
+
+.collection2 {
+	height: 1340px;
+}
+.collection2 .banner {
+	position: relative;
+}
+.collection2 .banner img {
+	width: 100%;
+}
+.collection2 .banner p:nth-child(2) {
+	position: absolute;
+	top: 59%;
+	right: 188px;
+	font-size: 22px;
+	font-family: robotolight;
+	padding: 1rem 5rem;
+	color: #fff;
+	background-color: rgba(64, 46, 41, 0.8);
+	border-radius: 5px;
+}
+.collection2 .content {
+	position: relative;
+	text-align: center;
+}
+.collection2 .content .row1 {
+	position: absolute;
+	left: 95px;
+	top: -105px;
+	right: 95px;
+}
+.collection2 .row1 .col-sm-4 p:nth-child(2) {
+	margin: 20px 0 0;
+	font-size: 18px;
+	font-family: "robotoregular";
+	color: #161616;
+}
+.collection2 .row1 .col-sm-4 p:nth-child(3) {
+	font-size: 18px;
+	font-family: "robotoregular";
+	color: #fe0036;
+}
+.collection2 .row1 .col-sm-4 p:nth-child(3)>span {
+	font-size: 15px;
+	font-family: "robotoregular";
+	color: #828282;
+	text-decoration-line: line-through;
+}
+.collection2 .content .row2 {
+	position: absolute;
+	left: 95px;
+	top: 365px;
+	right: 95px;
+}
+.collection2 .row2 .col-sm-4 p:nth-child(2) {
+	margin: 20px 0 0;
+	font-size: 18px;
+	font-family: "robotoregular";
+	color: #161616;
+}
+.collection2 .row2 .col-sm-4 p:nth-child(3) {
+	font-size: 18px;
+	font-family: "robotoregular";
+	color: #fe0036;
+}
+.collection2 .row2 .col-sm-4 p:nth-child(3)>span {
+	font-size: 15px;
+	font-family: "robotoregular";
+	color: #828282;
+	text-decoration-line: line-through;
+}
+.footer {
+	background-color: rgb(64,64,66);
+	color: #fff;
+}
+.footer .content{
+	padding: 20px 95px;
+}
+.footer .content:after {
+	clear: both;
+	content: ".";
+	display: block;
+	width: 0px;
+	height: 0px;
+}
+.footer .content .col-sm-3 .title {
+	font-family: "robotomedium";
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.footer .content .col-sm-3 .address p:nth-child(1) {
+	font-family: "robotomedium";
+	font-size: 15px;
+}
+.footer .content .col-sm-3 .address p:nth-child(n+2) {
+	font-family: "robotomedium";
+	font-size: 13px;
+}
+.footer .content .col-sm-3 .head {
+	font-family: "robotomedium";
+	font-size: 14px;
+}
+.footer .content .col-sm-3 .email {
+	margin-top: 20px;
+	position: relative;
+}
+.footer .content .col-sm-3 .email input{
+	border-radius: 3px;
+	padding: 1rem;
+	border: none;
+	width: 235px;
+}
+.footer .content .col-sm-3 .email span {
+	font-size: 2rem;
+	padding: 1rem;
+	background-color: rgb(208, 18, 31);
+	position: absolute;
+	top: 0;
+	right: -13px;
+}
+.footer .content .col-sm-3 .social {
+	margin-top: 20px;
+}
+.footer .content .col-sm-3 .social span {
+	margin-right: 20px;
+	color: rgb(184, 184, 184);
+	font-size: 30px;
+}
