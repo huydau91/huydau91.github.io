@@ -208,15 +208,15 @@
 }
 .catalogue .row1 .item .content p:nth-child(1), .catalogue .row2 .item .content p:nth-child(1) {
 	font-weight: bold;
-    font-size: 25px;
-    word-spacing: -5px;
-    margin-bottom: 0;
+	font-size: 25px;
+	word-spacing: -5px;
+	margin-bottom: 0;
 }
 .catalogue .row1 .item .content p:nth-child(2), .catalogue .row2 .item .content p:nth-child(2) {
 	text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fe0036;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fe0036;
 }
 .combo .menu {
 	padding: 13px 95px 13px;
@@ -289,6 +289,28 @@
 	font-size: 25px;
 	color: #fe0036;
 	font-weight: bold;
+}
+.combo .content .col-sm-3 .like span {
+	text-transform: uppercase;
+	padding: 0.2rem 2rem;
+	background: #ffeded;
+	color: rgb(143, 39, 40);
+	font-weight: 600;
+	border: 1px solid #940f12;
+	border-radius: 2px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.combo .content .col-sm-3 .buynow span {
+	text-transform: uppercase;
+	padding: 0.2rem 2rem;
+	background: #b70306;
+	color: #fff;
+	border: 2px solid #b70306;
+	border-radius: 2px;
+	display: inline-block;
+	cursor: pointer;
 }
 
 .hotdeal {
