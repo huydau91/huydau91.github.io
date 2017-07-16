@@ -117,14 +117,48 @@
 }
 
 .header .sidebar {
-    /*width: 35px;
-    height: 620px;
-    background-color: rgb(0,0,0);*/
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    cursor: pointer;
+	width: 35px;
+	height: 620px;
+	background-color: rgb(0,0,0);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+.header .sidebar .cart {
+	position: relative;
+	top: 105px;
+	text-align: center;
+	cursor: pointer;
+}
+.header .sidebar .cart p {
+	color: #fff;
+	font-weight: initial;
+}
+.header .sidebar .cart i {
+	font-size: 20px;
+	color: red;
+	margin-top: 20px;
+}
+.header .sidebar .select {
+	text-align: center;
+	position: relative;
+	top: 140px;
+}
+.header .sidebar .select i {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+.header .sidebar .select .gotop {
+	cursor: pointer;
+}
+.header .sidebar .select .gotop span {
+	display: block;
+	color: #fff;
+	font-size: 15px;
 }
 
 .bigbanner img {
@@ -155,10 +189,35 @@
 .catalogue .row1 img, .catalogue .row2 img {
 	cursor: pointer;
 }
-.catalogue .row1 .center, .catalogue .row2 .center {
+.catalogue .row1 .item, .catalogue .row2 .item {
+	width: 360px;
+	display: inline-block;
+	background-color: #fff;
+	padding: 0 40px;
+}
+.catalogue .row1 .item.center, .catalogue .row2 .item.center {
 	margin: 0 35px;
 }
-
+.catalogue .row1 .item .content, .catalogue .row2 .item .content {
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	font-family: monospace;
+	cursor: pointer;
+}
+.catalogue .row1 .item .content p:nth-child(1), .catalogue .row2 .item .content p:nth-child(1) {
+	font-weight: bold;
+    font-size: 25px;
+    word-spacing: -5px;
+    margin-bottom: 0;
+}
+.catalogue .row1 .item .content p:nth-child(2), .catalogue .row2 .item .content p:nth-child(2) {
+	text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fe0036;
+}
 .combo .menu {
 	padding: 13px 95px 13px;
 	background-color: rgb(236,236,236);
@@ -485,7 +544,6 @@
 	padding: 1rem;
 	border: none;
 	width: 235px;
-	color: black;
 }
 .footer .content .col-sm-3 .email span {
 	font-size: 2rem;
