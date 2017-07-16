@@ -485,6 +485,7 @@
 	padding: 1rem;
 	border: none;
 	width: 235px;
+	color: black;
 }
 .footer .content .col-sm-3 .email span {
 	font-size: 2rem;
