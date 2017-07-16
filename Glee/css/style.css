@@ -46,6 +46,7 @@
 	position: absolute;
 	left: 95px;
 	top: 20px;
+	cursor: pointer;
 }
 
 .header .top .item2 {
@@ -123,6 +124,7 @@
     top: 0;
     right: 0;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .bigbanner img {
@@ -150,9 +152,11 @@
 .catalogue .row1 {
 	margin-bottom: 40px;
 }
-
+.catalogue .row1 img, .catalogue .row2 img {
+	cursor: pointer;
+}
 .catalogue .row1 .center, .catalogue .row2 .center {
-	padding: 0 35px;
+	margin: 0 35px;
 }
 
 .combo .menu {
@@ -213,7 +217,9 @@
 .combo .content .col-sm-3 {
 	text-align: left;
 }
-
+.combo .content .col-sm-3 img {
+	cursor: pointer;
+}
 .combo .content .col-sm-3 p:nth-child(1) {
 	font-family: "open_sanssemibold";
 	font-size: 30px;
@@ -247,6 +253,9 @@
 }
 .hotdeal .content .item {
 	background-color: #fff;
+}
+.hotdeal .content .item img {
+	cursor: pointer;
 }
 .hotdeal .content .item p:nth-child(2) {
 	font-family: "robotoregular";
@@ -299,6 +308,7 @@
 	color: #fff;
 	background: rgb(102,102,104);
 	border-radius: 5px;
+	cursor: pointer;
 }
 .collection1 .content {
 	position: relative;
@@ -309,9 +319,13 @@
 	top: -105px;
 	right: 95px;
 }
+
 .collection1 .content .row1 .col-sm-3 {
 	padding: 0;
 	text-align: center;
+}
+.collection1 .content .row1 .col-sm-3 img {
+	cursor: pointer;
 }
 .collection1 .content .row1 .col-sm-3 p:nth-child(2) {
 	margin: 15px 0 0;
@@ -335,7 +349,9 @@
 	padding: 0;
 	text-align: center;
 }
-
+.collection1 .content .row2 .col-sm-3 img {
+	cursor: pointer;
+}
 .collection1 .content .row2 .col-sm-3 p:nth-child(2) {
 	margin: 15px 0 0;
 	font-size: 16px;
@@ -369,6 +385,7 @@
 	color: #fff;
 	background-color: rgba(64, 46, 41, 0.8);
 	border-radius: 5px;
+	cursor: pointer;
 }
 .collection2 .content {
 	position: relative;
@@ -379,6 +396,9 @@
 	left: 95px;
 	top: -105px;
 	right: 95px;
+}
+.collection2 .content .row1 img {
+	cursor: pointer;
 }
 .collection2 .row1 .col-sm-4 p:nth-child(2) {
 	margin: 20px 0 0;
@@ -402,6 +422,9 @@
 	left: 95px;
 	top: 365px;
 	right: 95px;
+}
+.collection2 .content .row2 img {
+	cursor: pointer;
 }
 .collection2 .row2 .col-sm-4 p:nth-child(2) {
 	margin: 20px 0 0;
@@ -451,6 +474,7 @@
 .footer .content .col-sm-3 .head {
 	font-family: "robotomedium";
 	font-size: 14px;
+	cursor: pointer;
 }
 .footer .content .col-sm-3 .email {
 	margin-top: 20px;
@@ -469,6 +493,7 @@
 	position: absolute;
 	top: 0;
 	right: -13px;
+	cursor: pointer;
 }
 .footer .content .col-sm-3 .social {
 	margin-top: 20px;
@@ -477,4 +502,5 @@
 	margin-right: 20px;
 	color: rgb(184, 184, 184);
 	font-size: 30px;
+	cursor: pointer;
 }
