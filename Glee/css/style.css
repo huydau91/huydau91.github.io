@@ -36,6 +36,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+.wrap {
+	max-width: 1350px;
+}
 .header .top {
 	height: 100px;
 	position: relative;
@@ -99,6 +102,7 @@
 }
 .header .body .menu {
 	margin: 0 95px;
+	display: flex;
 }
 .header .body .menu a {
 	font-family: "robotomedium";
@@ -169,13 +173,11 @@
 .commitment {
 	padding: 30px 95px 40px;
 	background-color: rgb(236,236,236);
+	display: flex;
 }
 
 .commitment .item {
 	box-shadow: 6px 5px 10px rgba(136, 136, 136, 0.39);
-}
-.commitment .center {
-	margin: 0 15px;
 }
 
 .catalogue {
@@ -185,6 +187,9 @@
 
 .catalogue .row1 {
 	margin-bottom: 40px;
+}
+.catalogue .row1, .catalogue .row2 {
+	display: flex;
 }
 .catalogue .row1 img, .catalogue .row2 img {
 	cursor: pointer;
@@ -221,6 +226,7 @@
 .combo .menu {
 	padding: 13px 95px 13px;
 	background-color: rgb(236,236,236);
+	display: flex;
 }
 
 .combo .menu span:nth-child(1) {
@@ -567,7 +573,6 @@
 	border: none;
 	width: 235px;
 	color: black;
-
 }
 .footer .content .col-sm-3 .email span {
 	font-size: 2rem;
