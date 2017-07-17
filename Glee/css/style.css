@@ -123,7 +123,7 @@
 .header .sidebar {
 	width: 35px;
 	height: 620px;
-	background-color: rgb(0,0,0);
+	background-color: rgba(0, 0, 0, 0.67);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -454,7 +454,7 @@
 }
 
 .collection2 {
-	height: 1340px;
+	height: 1355px;
 }
 .collection2 .banner {
 	position: relative;
@@ -507,7 +507,7 @@
 .collection2 .content .row2 {
 	position: absolute;
 	left: 95px;
-	top: 365px;
+	top: 375px;
 	right: 95px;
 }
 .collection2 .content .row2 img {
