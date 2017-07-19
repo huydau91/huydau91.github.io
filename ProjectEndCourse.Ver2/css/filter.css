@@ -453,7 +453,16 @@ input.save-page5:checked ~ label.save.save-page5 {
     border: none;
     margin-bottom: 1rem;
 }
-
+.filter.desktop .search-box a {
+    background: #ffa80f;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
 .filter.mobile img {
     width: 100%;
 }
