@@ -136,13 +136,15 @@ a, a:hover, a:focus, button:focus {
     margin-bottom: 1rem;
 }
 
-.search-box button {
+.search-box a {
     background: #ffa80f;
     width: 100%;
     padding: 1rem;
     color: white;
     border: none;
     margin-bottom: 1rem;
+    display: block;
+    text-align: center;
 }
 .fa{
     color: rgb(100, 149, 237);
