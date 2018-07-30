@@ -40,6 +40,35 @@
         .font-pacifico {
             font-family: 'Pacifico';
         }
+        .navbar-bg {
+            background: #005AA7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #aabba8, #cecfc7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #aabba8, #cecfc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .nav-item:hover, .navbar-light .navbar-nav .active {
+            background: #98ab9b;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #000000;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: #fff;
+        }
+        .topic-thumb {
+            width: 100%;
+        }
+        .footer {
+            color: #aaaaaa;
+        }
+        .footer-bg {
+            background-color: #F7F7F7;
+        }
+        .fs-15 {
+            font-size: 0.9375rem;
+        }
         .fs-20 {
             font-size: 1.25rem;
         }
@@ -73,6 +102,76 @@
                 <p class="font-pacifico fs-xl-35 mb-0 mb-sm-2">Thiền, Khí Công</p>
                 <p class="font-pacifico fs-xl-35 mb-0">Giải pháp sống lâu</p>
             </div>
+        </div>
+        <div class="navbar-links">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-bg p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav font-weight-bold fs-20">
+                        <li class="nav-item px-3 py-1 active border-right">
+                            <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3 py-1 border-right">
+                            <a class="nav-link" href="#">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item px-3 py-1 border-right">
+                            <a class="nav-link" href="#">Khóa học</a>
+                        </li>
+                        <li class="nav-item px-3 py-1 border-right">
+                            <a class="nav-link" href="#">Bài viết</a>
+                        </li>
+                        <li class="nav-item px-3 py-1 border-right">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content container py-5">
+            <div class="quote">
+                <h4 class="text-center text-danger font-weight-bold">Học viện Tâm Khí Việt - Học viện Thiền Khí công đầu tiên Việt Nam</h4>
+            </div>
+            <div class="topics row mx-0 pt-5">
+                <div class="col-sm-4">
+                    <div class="topic-title text-center">
+                        <a href="#" class="text-primary font-weight-bold fs-20">Khóa học Thiền, Khí công</a>
+                    </div>
+                    <div class="topic-profile">
+                        <img src="topic-thumb-2.jpg" alt="" class="topic-thumb">
+                    </div>
+                    <div class="see-more text-center mt-3">
+                        <button class="btn btn-outline-primary">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="topic-title text-center">
+                        <a href="#" class="text-primary font-weight-bold fs-20">Hoạt động của Học viện</a>
+                    </div>
+                    <div class="topic-profile">
+                        <img src="topic-thumb-3.jpg" alt="" class="topic-thumb">
+                    </div>
+                    <div class="see-more text-center mt-3">
+                        <button class="btn btn-outline-primary">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                     <div class="topic-title text-center">
+                        <a href="#" class="text-primary font-weight-bold fs-20">Bài giảng Video</a>
+                    </div>
+                    <div class="topic-profile">
+                        <img src="topic-thumb-1.jpg" alt="" class="topic-thumb">
+                    </div>
+                    <div class="see-more text-center mt-3">
+                        <button class="btn btn-outline-primary">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer footer-bg text-center py-3">
+            <h5 class="">Học viện Tâm Khí Việt - Thiền, Khí công, Giải pháp sống lâu</h5>
+            <p class="">Văn phòng đại diện: 226 Nghi Tàm - 0981.302.468 - contact@tamkhiviet.com</p>
         </div>
     </div>
 </body>
