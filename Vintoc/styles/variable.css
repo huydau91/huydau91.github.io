@@ -1,0 +1,5 @@
+.divider p {
+  border-bottom: solid 1px #c3c3c3;
+  width: 50%;
+  margin: 3rem auto;
+}
